@@ -1,5 +1,7 @@
-# cloud-gremlin-static-site
+# First 90 Days as Head of Architecture
 
-Using [hugo](https://gohugp.io) I created an interactive architecture walkthrough of hosting a static site on AWS.
+Using [hugo](https://gohugp.io) I created an interactive walkthrough of the first 90 days for a new Head of Architecture.
 
-This is available at [Cloud Gremlin Static Site Walkthrough](https://gremlins.io/walkthroughs/static-site/).
+This is hosted on GH pages using a custom workflow to build the hugo site and deploy to pages.
+
+This is available at [First 90 Days](https://coderturtle.github.io/first-90-days/en/).
