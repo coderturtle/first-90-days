@@ -5,12 +5,183 @@ pre: '<b>a. </b>'
 chapter: false
 ---
 
-The first step is to store your content in a secure and scalable way. A simple and flexible approach for static content that you want to make available on the internet is to store it in an Amazon S3 “bucket.” S3 is easy to set up and use, and is designed to store and retrieve any number of files or objects from anywhere on the internet. It’s simple to use and offers durable, highly available, and scalable data storage at low cost.
+## Understanding the Current Architectural Landscape and Technology Stack
 
-When you put your content in an S3 bucket in the cloud, a lot of things become much easier. First, you don’t need to plan for and allocate a specific amount of storage space because S3 buckets scale automatically. In addition, because S3 is a serverless service, you don’t need to manage or patch servers that store files yourself; you just put and get your content. Finally, even if you require a server for your application (for example, because you have a dynamic application), the server can be smaller because it doesn’t have to handle requests for static content.
+![Understanding](images/understanding.png 'Understanding')
 
-However, lets take a look at the scenario shown in the following illustration. We’ve stored our content in an S3 bucket located in a region in Europe, and we have users located around the world who access that content. As the arrows show, whenever a user requests content, the request must go over the public internet to the source location–the S3 bucket in Europe. Depending on the user’s location, this can take a long time. The delays might even cause some user requests to bounce and return an error from the page.
+## 1. Initial Stakeholder Meetings and Interviews
 
-![S3](images/s3-serving-content.jpg 'S3')
+**Objective:**  
+Gather high-level information about the current system, pain points, and business requirements.
 
-This is where Cloudfront comes in...
+**Steps:**
+- **Schedule Meetings:**
+  - Identify key stakeholders such as department heads, team leads, and key technical staff.
+  - Schedule initial meetings to understand their perspectives.
+- **Prepare Questions:**
+  - Develop a comprehensive set of questions focusing on system functionality, pain points, and expectations.
+
+**Tools:**
+- **Documentation Tools:** Google Docs or Microsoft Word for note-taking.
+- **Communication Tools:** Zoom or Microsoft Teams for virtual meetings.
+
+**Example Questions:**
+- What are the primary functions and components of the current system?
+- What are the main pain points or issues you encounter?
+- What are your expectations for the new architecture?
+
+**Documentation:**
+- Create a document summarizing the stakeholder interviews, highlighting key insights and concerns.
+
+---
+
+## 2. Review Existing Documentation
+
+**Objective:**  
+Understand the current architecture, data flows, and integration points.
+
+**Steps:**
+- **Collect Documentation:**
+  - Gather all available system documentation, including architecture diagrams, data flow diagrams, and technical specifications.
+- **Review Documentation:**
+  - Analyze the collected documentation to understand the system’s structure and identify any gaps.
+
+**Tools:**
+- **Document Management:** Confluence or Obsidian to organize and review documents and notes.
+- **Diagram Tools:** [drawio](https://draw.io) or [structurizr](https://docs.structurizr.com/)
+
+**Documentation:**
+- Create a consolidated document with an overview of the existing architecture, including any identified gaps or outdated information.
+
+---
+
+## 3. System Analysis and Audit
+
+**Objective:**  
+Evaluate the current system’s performance, reliability, and security.
+
+**Steps:**
+- **Performance Analysis:**
+  - Use performance monitoring tools to gather data on response times, throughput, and resource utilization.
+- **Security Assessment:**
+  - Conduct a security audit to identify vulnerabilities and risks.
+- **Log Analysis:**
+  - Analyze system logs to identify common errors and issues.
+
+**Tools:**
+- **Performance Monitoring:** Grafana and Prometheus for monitoring and visualizing system performance.
+- **Security Tools:** OWASP ZAP for security assessments.
+- **Log Management:** ELK Stack (Elasticsearch, Logstash, Kibana) for log analysis.
+
+**Documentation:**
+- Create a detailed report with performance metrics, security findings, and log analysis results.
+
+---
+
+## 4. Data Flow and Integration Analysis
+
+**Objective:**  
+Understand how data flows through the system and how components integrate.
+
+**Steps:**
+- **Map Data Flows:**
+  - Create data flow diagrams to visualize how data moves between system components.
+- **Identify Integration Points:**
+  - Document integration points with other systems and services.
+- **Assess Data Quality:**
+  - Evaluate data consistency and quality issues.
+
+**Tools:**
+- **Diagram Tools:** Draw.io or Microsoft Visio for creating data flow diagrams.
+- **Data Quality Tools:** Talend Open Studio for data integration and quality assessment.
+
+**Documentation:**
+- Develop data flow diagrams and integration maps, and document data quality assessments.
+
+---
+
+## 5. User Experience and Feedback
+
+**Objective:**  
+Gather feedback from end-users to understand usability issues and user satisfaction.
+
+**Steps:**
+- **Conduct Surveys:**
+  - Create and distribute surveys to gather user feedback on the system.
+- **User Interviews:**
+  - Conduct interviews with a sample of end-users.
+- **Observe User Interactions:**
+  - Observe how users interact with the system to identify usability issues.
+
+**Tools:**
+- **Survey Tools:** Google Forms or SurveyMonkey for creating and distributing surveys.
+- **User Interview Tools:** Zoom or Microsoft Teams for conducting interviews.
+
+**Documentation:**
+- Summarize survey results and interview findings in a user feedback report.
+
+---
+
+## 6. SWOT Analysis
+
+**Objective:**  
+Perform a SWOT analysis to identify strengths, weaknesses, opportunities, and threats.
+
+**Steps:**
+- **Identify Strengths and Weaknesses:**
+  - Analyze the current system to identify its strengths and weaknesses.
+- **Identify Opportunities and Threats:**
+  - Consider external factors to identify opportunities for improvement and potential threats.
+
+**Tools:**
+- **SWOT Analysis Tools:** MindMeister or Miro for creating SWOT analysis diagrams.
+
+**Documentation:**
+- Create a SWOT analysis table summarizing the key points.
+
+---
+
+## 7. Consolidation and Reporting
+
+**Objective:**  
+Compile findings into a comprehensive report.
+
+**Steps:**
+- **Consolidate Findings:**
+  - Gather all data, insights, and analyses from previous steps.
+- **Create a Detailed Report:**
+  - Develop a report that includes architecture diagrams, performance metrics, security findings, user feedback, and SWOT analysis.
+- **Present to Stakeholders:**
+  - Present the report to stakeholders for feedback and validation.
+
+**Tools:**
+- **Reporting Tools:** Google Docs or Microsoft Word for creating the report.
+- **Presentation Tools:** PowerPoint or Google Slides for presenting findings.
+
+**Documentation:**
+- Develop a comprehensive report and presentation summarizing the current state analysis.
+
+---
+
+## Example Documentation Structure:
+
+1. **Introduction:**
+   - Overview of the assessment process and objectives.
+2. **Stakeholder Insights:**
+   - Summary of key findings from stakeholder interviews.
+3. **Current Architecture:**
+   - Detailed architecture diagrams and documentation review findings.
+4. **System Performance:**
+   - Performance metrics and analysis.
+5. **Security Assessment:**
+   - Summary of security findings.
+6. **Data Flow Analysis:**
+   - Data flow diagrams and integration points.
+7. **User Feedback:**
+   - Summary of user surveys and interviews.
+8. **SWOT Analysis:**
+   - SWOT analysis table.
+9. **Conclusion:**
+   - Summary of key findings and recommendations for next steps.
+
+By following this structured approach and utilizing the appropriate tools, you can thoroughly understand the current architectural landscape and technology stack, which will serve as a solid foundation for future architectural decisions and strategy formulation.

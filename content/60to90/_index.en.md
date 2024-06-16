@@ -7,6 +7,8 @@ weight: 15
 
 # Scaling Efforts & Ensuring Sustainability
 
+![Scaling](images/scaling.png 'Scaling')
+
 ## Review & Refine Processes
 
 - Conduct a thorough review of existing processes and workflows, identifying areas for improvement and implementing best practices to enhance efficiency and productivity.

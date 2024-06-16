@@ -7,6 +7,8 @@ chapter: true
 
 # Getting Acquainted & Assessing the landscape
 
+![Accessment](images/accessment.png 'Accessment')
+
 ## Understand the Current State:
 
 - A key focus would be on understanding the current architectural landscape and technology stack. This includes reviewing existing documentation, systems, and processes.

@@ -12,21 +12,21 @@
     <title>Team Integration :: Head of Architecture First 90 Days</title>
 
     
-    <link href="/first-90-days/css/nucleus.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/fontawesome-all.min.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/hybrid.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/featherlight.min.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/perfect-scrollbar.min.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/auto-complete.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/atom-one-dark-reasonable.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/theme.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/hugo-theme.css?1718569492" rel="stylesheet">
+    <link href="/first-90-days/css/nucleus.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/fontawesome-all.min.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/hybrid.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/featherlight.min.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/perfect-scrollbar.min.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/auto-complete.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/atom-one-dark-reasonable.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/theme.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/hugo-theme.css?1718577569" rel="stylesheet">
     
-    <link href="/first-90-days/css/theme-blue.css?1718569492" rel="stylesheet">
+    <link href="/first-90-days/css/theme-blue.css?1718577569" rel="stylesheet">
     
     
 
-    <script src="/first-90-days/js/jquery-3.3.1.min.js?1718569492"></script>
+    <script src="/first-90-days/js/jquery-3.3.1.min.js?1718577569"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/first-90-days/js/lunr.min.js?1718569492"></script>
-<script type="text/javascript" src="/first-90-days/js/auto-complete.js?1718569492"></script>
+<script type="text/javascript" src="/first-90-days/js/lunr.min.js?1718577569"></script>
+<script type="text/javascript" src="/first-90-days/js/auto-complete.js?1718577569"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/first-90-days\/";
     
 </script>
-<script type="text/javascript" src="/first-90-days/js/search.js?1718569492"></script>
+<script type="text/javascript" src="/first-90-days/js/search.js?1718577569"></script>
 
     
   </div>
@@ -123,6 +123,46 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/current-state/sample-report/" title="Example Report" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/current-state/sample-report/">
+          Example Report
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -729,11 +769,11 @@
 
 	<p>Storing your static content with S3 provides a lot of advantages. But to help optimize your application’s performance and security while effectively managing cost, you can also set up Amazon CloudFront to work with your S3 bucket to serve and protect the content. CloudFront is a content delivery network (CDN) service that delivers static and dynamic web content, video streams, and APIs around the world, securely and at scale. By design, delivering data out of CloudFront can be more cost effective than delivering it from S3 directly to your users.</p>
 <p>CloudFront serves content through a worldwide network of data centers called Edge Locations. Using edge servers to cache and serve content improves performance by providing content closer to where viewers are located. CloudFront has edge servers in locations all around the world, as you can see from the following map:</p>
-<p><img alt="Cloudfront" src="images/cloudfront-map.png" title="Cloudfront"></p>
+<p><img alt="Cloudfront" src="/first-90-days/en/first30/team-integration/images/cloudfront-map.png" title="Cloudfront"></p>
 <p>When a user requests content that you serve with CloudFront, their request is routed to a nearby Edge Location. If CloudFront has a cached copy of the requested file, CloudFront delivers it to the user, providing a fast (low-latency) response. If the file they’ve requested isn’t yet cached, CloudFront retrieves it from your origin – for example, the S3 bucket where you’ve stored your content. Then, for the next local request for the same content, it’s already cached nearby and can be served immediately.</p>
 <p>By caching your content in Edge Locations, CloudFront reduces the load on your S3 bucket and helps ensure a faster response for your users when they request content.</p>
 <p>In the following illustration, you can see that there are no longer requests traversing the globe to get to our content hosted in an S3 bucket. Instead, requests are routed to the “least latent” Edge Location; that is, the closest in terms of delivery speed. CloudFront then serves cached content quickly and directly to the requesting user nearby, as shown with the green arrows. If the content is not yet cached with an edge server, CloudFront retrieves it from the S3 bucket origin. And because the content traverses the AWS private network instead of the public internet and CloudFront optimizes the TCP handshake, the request and content return is still much faster than access across the public internet.</p>
-<p><img alt="Cloudfront" src="images/s3-and-cloudfront.jpg" title="Cloudfront"></p>
+<p><img alt="Cloudfront" src="/first-90-days/en/first30/team-integration/images/s3-and-cloudfront.jpg" title="Cloudfront"></p>
 <p>But how do we secure our content?</p>
 
 
@@ -799,8 +839,26 @@
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -1067,7 +1125,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/first-90-days/en/first30/current-state/" title="Current State"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/first-90-days/en/first30/current-state/sample-report/" title="Example Report"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/first-90-days/en/first30/quick-wins/" title="Quick Wins" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -1080,19 +1138,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/first-90-days/js/clipboard.min.js?1718569492"></script>
-    <script src="/first-90-days/js/perfect-scrollbar.min.js?1718569492"></script>
-    <script src="/first-90-days/js/perfect-scrollbar.jquery.min.js?1718569492"></script>
-    <script src="/first-90-days/js/jquery.sticky.js?1718569492"></script>
-    <script src="/first-90-days/js/featherlight.min.js?1718569492"></script>
-    <script src="/first-90-days/js/highlight.pack.js?1718569492"></script>
+    <script src="/first-90-days/js/clipboard.min.js?1718577569"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.min.js?1718577569"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.jquery.min.js?1718577569"></script>
+    <script src="/first-90-days/js/jquery.sticky.js?1718577569"></script>
+    <script src="/first-90-days/js/featherlight.min.js?1718577569"></script>
+    <script src="/first-90-days/js/highlight.pack.js?1718577569"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/first-90-days/js/modernizr.custom-3.6.0.js?1718569492"></script>
-    <script src="/first-90-days/js/learn.js?1718569492"></script>
-    <script src="/first-90-days/js/hugo-learn.js?1718569492"></script>
+    <script src="/first-90-days/js/modernizr.custom-3.6.0.js?1718577569"></script>
+    <script src="/first-90-days/js/learn.js?1718577569"></script>
+    <script src="/first-90-days/js/hugo-learn.js?1718577569"></script>
     
         
-            <script src="/first-90-days/mermaid/mermaid.js?1718569492"></script>
+            <script src="/first-90-days/mermaid/mermaid.js?1718577569"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

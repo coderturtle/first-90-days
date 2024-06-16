@@ -12,21 +12,21 @@
     <title>Current State :: Head of Architecture First 90 Days</title>
 
     
-    <link href="/first-90-days/css/nucleus.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/fontawesome-all.min.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/hybrid.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/featherlight.min.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/perfect-scrollbar.min.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/auto-complete.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/atom-one-dark-reasonable.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/theme.css?1718569492" rel="stylesheet">
-    <link href="/first-90-days/css/hugo-theme.css?1718569492" rel="stylesheet">
+    <link href="/first-90-days/css/nucleus.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/fontawesome-all.min.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/hybrid.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/featherlight.min.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/perfect-scrollbar.min.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/auto-complete.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/atom-one-dark-reasonable.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/theme.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/hugo-theme.css?1718577569" rel="stylesheet">
     
-    <link href="/first-90-days/css/theme-blue.css?1718569492" rel="stylesheet">
+    <link href="/first-90-days/css/theme-blue.css?1718577569" rel="stylesheet">
     
     
 
-    <script src="/first-90-days/js/jquery-3.3.1.min.js?1718569492"></script>
+    <script src="/first-90-days/js/jquery-3.3.1.min.js?1718577569"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/first-90-days/js/lunr.min.js?1718569492"></script>
-<script type="text/javascript" src="/first-90-days/js/auto-complete.js?1718569492"></script>
+<script type="text/javascript" src="/first-90-days/js/lunr.min.js?1718577569"></script>
+<script type="text/javascript" src="/first-90-days/js/auto-complete.js?1718577569"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/first-90-days\/";
     
 </script>
-<script type="text/javascript" src="/first-90-days/js/search.js?1718569492"></script>
+<script type="text/javascript" src="/first-90-days/js/search.js?1718577569"></script>
 
     
   </div>
@@ -123,6 +123,46 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/current-state/sample-report/" title="Example Report" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/current-state/sample-report/">
+          Example Report
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -703,7 +743,19 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#understanding-the-current-architectural-landscape-and-technology-stack">Understanding the Current Architectural Landscape and Technology Stack</a></li>
+    <li><a href="#1-initial-stakeholder-meetings-and-interviews">1. Initial Stakeholder Meetings and Interviews</a></li>
+    <li><a href="#2-review-existing-documentation">2. Review Existing Documentation</a></li>
+    <li><a href="#3-system-analysis-and-audit">3. System Analysis and Audit</a></li>
+    <li><a href="#4-data-flow-and-integration-analysis">4. Data Flow and Integration Analysis</a></li>
+    <li><a href="#5-user-experience-and-feedback">5. User Experience and Feedback</a></li>
+    <li><a href="#6-swot-analysis">6. SWOT Analysis</a></li>
+    <li><a href="#7-consolidation-and-reporting">7. Consolidation and Reporting</a></li>
+    <li><a href="#example-documentation-structure">Example Documentation Structure:</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -727,11 +779,266 @@
 
 
 
-	<p>The first step is to store your content in a secure and scalable way. A simple and flexible approach for static content that you want to make available on the internet is to store it in an Amazon S3 “bucket.” S3 is easy to set up and use, and is designed to store and retrieve any number of files or objects from anywhere on the internet. It’s simple to use and offers durable, highly available, and scalable data storage at low cost.</p>
-<p>When you put your content in an S3 bucket in the cloud, a lot of things become much easier. First, you don’t need to plan for and allocate a specific amount of storage space because S3 buckets scale automatically. In addition, because S3 is a serverless service, you don’t need to manage or patch servers that store files yourself; you just put and get your content. Finally, even if you require a server for your application (for example, because you have a dynamic application), the server can be smaller because it doesn’t have to handle requests for static content.</p>
-<p>However, lets take a look at the scenario shown in the following illustration. We’ve stored our content in an S3 bucket located in a region in Europe, and we have users located around the world who access that content. As the arrows show, whenever a user requests content, the request must go over the public internet to the source location–the S3 bucket in Europe. Depending on the user’s location, this can take a long time. The delays might even cause some user requests to bounce and return an error from the page.</p>
-<p><img alt="S3" src="images/s3-serving-content.jpg" title="S3"></p>
-<p>This is where Cloudfront comes in&hellip;</p>
+	<h2 id="understanding-the-current-architectural-landscape-and-technology-stack">Understanding the Current Architectural Landscape and Technology Stack</h2>
+<p><img alt="Understanding" src="/first-90-days/en/first30/current-state/images/understanding.png" title="Understanding"></p>
+<h2 id="1-initial-stakeholder-meetings-and-interviews">1. Initial Stakeholder Meetings and Interviews</h2>
+<p><strong>Objective:</strong><br>
+Gather high-level information about the current system, pain points, and business requirements.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li><strong>Schedule Meetings:</strong>
+<ul>
+<li>Identify key stakeholders such as department heads, team leads, and key technical staff.</li>
+<li>Schedule initial meetings to understand their perspectives.</li>
+</ul>
+</li>
+<li><strong>Prepare Questions:</strong>
+<ul>
+<li>Develop a comprehensive set of questions focusing on system functionality, pain points, and expectations.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Tools:</strong></p>
+<ul>
+<li><strong>Documentation Tools:</strong> Google Docs or Microsoft Word for note-taking.</li>
+<li><strong>Communication Tools:</strong> Zoom or Microsoft Teams for virtual meetings.</li>
+</ul>
+<p><strong>Example Questions:</strong></p>
+<ul>
+<li>What are the primary functions and components of the current system?</li>
+<li>What are the main pain points or issues you encounter?</li>
+<li>What are your expectations for the new architecture?</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li>Create a document summarizing the stakeholder interviews, highlighting key insights and concerns.</li>
+</ul>
+<hr>
+<h2 id="2-review-existing-documentation">2. Review Existing Documentation</h2>
+<p><strong>Objective:</strong><br>
+Understand the current architecture, data flows, and integration points.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li><strong>Collect Documentation:</strong>
+<ul>
+<li>Gather all available system documentation, including architecture diagrams, data flow diagrams, and technical specifications.</li>
+</ul>
+</li>
+<li><strong>Review Documentation:</strong>
+<ul>
+<li>Analyze the collected documentation to understand the system’s structure and identify any gaps.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Tools:</strong></p>
+<ul>
+<li><strong>Document Management:</strong> Confluence or Obsidian to organize and review documents and notes.</li>
+<li><strong>Diagram Tools:</strong> <a href="https://draw.io">drawio</a> or <a href="https://docs.structurizr.com/">structurizr</a></li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li>Create a consolidated document with an overview of the existing architecture, including any identified gaps or outdated information.</li>
+</ul>
+<hr>
+<h2 id="3-system-analysis-and-audit">3. System Analysis and Audit</h2>
+<p><strong>Objective:</strong><br>
+Evaluate the current system’s performance, reliability, and security.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li><strong>Performance Analysis:</strong>
+<ul>
+<li>Use performance monitoring tools to gather data on response times, throughput, and resource utilization.</li>
+</ul>
+</li>
+<li><strong>Security Assessment:</strong>
+<ul>
+<li>Conduct a security audit to identify vulnerabilities and risks.</li>
+</ul>
+</li>
+<li><strong>Log Analysis:</strong>
+<ul>
+<li>Analyze system logs to identify common errors and issues.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Tools:</strong></p>
+<ul>
+<li><strong>Performance Monitoring:</strong> Grafana and Prometheus for monitoring and visualizing system performance.</li>
+<li><strong>Security Tools:</strong> OWASP ZAP for security assessments.</li>
+<li><strong>Log Management:</strong> ELK Stack (Elasticsearch, Logstash, Kibana) for log analysis.</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li>Create a detailed report with performance metrics, security findings, and log analysis results.</li>
+</ul>
+<hr>
+<h2 id="4-data-flow-and-integration-analysis">4. Data Flow and Integration Analysis</h2>
+<p><strong>Objective:</strong><br>
+Understand how data flows through the system and how components integrate.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li><strong>Map Data Flows:</strong>
+<ul>
+<li>Create data flow diagrams to visualize how data moves between system components.</li>
+</ul>
+</li>
+<li><strong>Identify Integration Points:</strong>
+<ul>
+<li>Document integration points with other systems and services.</li>
+</ul>
+</li>
+<li><strong>Assess Data Quality:</strong>
+<ul>
+<li>Evaluate data consistency and quality issues.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Tools:</strong></p>
+<ul>
+<li><strong>Diagram Tools:</strong> Draw.io or Microsoft Visio for creating data flow diagrams.</li>
+<li><strong>Data Quality Tools:</strong> Talend Open Studio for data integration and quality assessment.</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li>Develop data flow diagrams and integration maps, and document data quality assessments.</li>
+</ul>
+<hr>
+<h2 id="5-user-experience-and-feedback">5. User Experience and Feedback</h2>
+<p><strong>Objective:</strong><br>
+Gather feedback from end-users to understand usability issues and user satisfaction.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li><strong>Conduct Surveys:</strong>
+<ul>
+<li>Create and distribute surveys to gather user feedback on the system.</li>
+</ul>
+</li>
+<li><strong>User Interviews:</strong>
+<ul>
+<li>Conduct interviews with a sample of end-users.</li>
+</ul>
+</li>
+<li><strong>Observe User Interactions:</strong>
+<ul>
+<li>Observe how users interact with the system to identify usability issues.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Tools:</strong></p>
+<ul>
+<li><strong>Survey Tools:</strong> Google Forms or SurveyMonkey for creating and distributing surveys.</li>
+<li><strong>User Interview Tools:</strong> Zoom or Microsoft Teams for conducting interviews.</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li>Summarize survey results and interview findings in a user feedback report.</li>
+</ul>
+<hr>
+<h2 id="6-swot-analysis">6. SWOT Analysis</h2>
+<p><strong>Objective:</strong><br>
+Perform a SWOT analysis to identify strengths, weaknesses, opportunities, and threats.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li><strong>Identify Strengths and Weaknesses:</strong>
+<ul>
+<li>Analyze the current system to identify its strengths and weaknesses.</li>
+</ul>
+</li>
+<li><strong>Identify Opportunities and Threats:</strong>
+<ul>
+<li>Consider external factors to identify opportunities for improvement and potential threats.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Tools:</strong></p>
+<ul>
+<li><strong>SWOT Analysis Tools:</strong> MindMeister or Miro for creating SWOT analysis diagrams.</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li>Create a SWOT analysis table summarizing the key points.</li>
+</ul>
+<hr>
+<h2 id="7-consolidation-and-reporting">7. Consolidation and Reporting</h2>
+<p><strong>Objective:</strong><br>
+Compile findings into a comprehensive report.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li><strong>Consolidate Findings:</strong>
+<ul>
+<li>Gather all data, insights, and analyses from previous steps.</li>
+</ul>
+</li>
+<li><strong>Create a Detailed Report:</strong>
+<ul>
+<li>Develop a report that includes architecture diagrams, performance metrics, security findings, user feedback, and SWOT analysis.</li>
+</ul>
+</li>
+<li><strong>Present to Stakeholders:</strong>
+<ul>
+<li>Present the report to stakeholders for feedback and validation.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Tools:</strong></p>
+<ul>
+<li><strong>Reporting Tools:</strong> Google Docs or Microsoft Word for creating the report.</li>
+<li><strong>Presentation Tools:</strong> PowerPoint or Google Slides for presenting findings.</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li>Develop a comprehensive report and presentation summarizing the current state analysis.</li>
+</ul>
+<hr>
+<h2 id="example-documentation-structure">Example Documentation Structure:</h2>
+<ol>
+<li><strong>Introduction:</strong>
+<ul>
+<li>Overview of the assessment process and objectives.</li>
+</ul>
+</li>
+<li><strong>Stakeholder Insights:</strong>
+<ul>
+<li>Summary of key findings from stakeholder interviews.</li>
+</ul>
+</li>
+<li><strong>Current Architecture:</strong>
+<ul>
+<li>Detailed architecture diagrams and documentation review findings.</li>
+</ul>
+</li>
+<li><strong>System Performance:</strong>
+<ul>
+<li>Performance metrics and analysis.</li>
+</ul>
+</li>
+<li><strong>Security Assessment:</strong>
+<ul>
+<li>Summary of security findings.</li>
+</ul>
+</li>
+<li><strong>Data Flow Analysis:</strong>
+<ul>
+<li>Data flow diagrams and integration points.</li>
+</ul>
+</li>
+<li><strong>User Feedback:</strong>
+<ul>
+<li>Summary of user surveys and interviews.</li>
+</ul>
+</li>
+<li><strong>SWOT Analysis:</strong>
+<ul>
+<li>SWOT analysis table.</li>
+</ul>
+</li>
+<li><strong>Conclusion:</strong>
+<ul>
+<li>Summary of key findings and recommendations for next steps.</li>
+</ul>
+</li>
+</ol>
+<p>By following this structured approach and utilizing the appropriate tools, you can thoroughly understand the current architectural landscape and technology stack, which will serve as a solid foundation for future architectural decisions and strategy formulation.</p>
 
 
 
@@ -794,11 +1101,10 @@
 
                     
                     
+                        
+                    
                     
 
-                    
-            
-        
                     
                         
             
@@ -807,6 +1113,25 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1064,7 +1389,7 @@
 			<a class="nav nav-prev" href="/first-90-days/en/first30/" title="First 30 Days"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/first-90-days/en/first30/team-integration/" title="Team Integration" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/first-90-days/en/first30/current-state/sample-report/" title="Example Report" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1074,19 +1399,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/first-90-days/js/clipboard.min.js?1718569492"></script>
-    <script src="/first-90-days/js/perfect-scrollbar.min.js?1718569492"></script>
-    <script src="/first-90-days/js/perfect-scrollbar.jquery.min.js?1718569492"></script>
-    <script src="/first-90-days/js/jquery.sticky.js?1718569492"></script>
-    <script src="/first-90-days/js/featherlight.min.js?1718569492"></script>
-    <script src="/first-90-days/js/highlight.pack.js?1718569492"></script>
+    <script src="/first-90-days/js/clipboard.min.js?1718577569"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.min.js?1718577569"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.jquery.min.js?1718577569"></script>
+    <script src="/first-90-days/js/jquery.sticky.js?1718577569"></script>
+    <script src="/first-90-days/js/featherlight.min.js?1718577569"></script>
+    <script src="/first-90-days/js/highlight.pack.js?1718577569"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/first-90-days/js/modernizr.custom-3.6.0.js?1718569492"></script>
-    <script src="/first-90-days/js/learn.js?1718569492"></script>
-    <script src="/first-90-days/js/hugo-learn.js?1718569492"></script>
+    <script src="/first-90-days/js/modernizr.custom-3.6.0.js?1718577569"></script>
+    <script src="/first-90-days/js/learn.js?1718577569"></script>
+    <script src="/first-90-days/js/hugo-learn.js?1718577569"></script>
     
         
-            <script src="/first-90-days/mermaid/mermaid.js?1718569492"></script>
+            <script src="/first-90-days/mermaid/mermaid.js?1718577569"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

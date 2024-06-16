@@ -2,46 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/first-90-days/en/console/create-domain/</loc>
+    <loc>http://localhost:1313/first-90-days/en/first30/current-state/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/overview/</loc>
+    <loc>http://localhost:1313/first-90-days/en/first30/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/overview/s3/</loc>
+    <loc>http://localhost:1313/first-90-days/en/60to90/processes/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/conclusion/overview/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/infra-as-code/overview/</loc>
+    <loc>http://localhost:1313/first-90-days/en/30to60/strategic-plan/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/overview/cloudfront/</loc>
+    <loc>http://localhost:1313/first-90-days/en/30to60/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/console/</loc>
-  </url><url>
-    <loc>http://localhost:1313/first-90-days/en/console/get-cert/</loc>
+    <loc>http://localhost:1313/first-90-days/en/60to90/innovation/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/conclusion/details/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/infra-as-code/details/</loc>
+    <loc>http://localhost:1313/first-90-days/en/30to60/team-integration/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/infra-as-code/</loc>
+    <loc>http://localhost:1313/first-90-days/en/first30/team-integration/</loc>
+  </url><url>
+    <loc>http://localhost:1313/first-90-days/en/60to90/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/first-90-days/en/console/create-bucket/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/conclusion/deploy/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/infra-as-code/deploy/</loc>
+    <loc>http://localhost:1313/first-90-days/en/60to90/collaboration/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/overview/security/</loc>
+    <loc>http://localhost:1313/first-90-days/en/30to60/quick-wins/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/overview/all-together/</loc>
-  </url><url>
-    <loc>http://localhost:1313/first-90-days/en/console/setup-cloudfront/</loc>
+    <loc>http://localhost:1313/first-90-days/en/first30/quick-wins/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/conclusion/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/console/update-bucket-policy/</loc>
-  </url><url>
-    <loc>http://localhost:1313/first-90-days/en/console/update-dns/</loc>
+    <loc>http://localhost:1313/first-90-days/en/60to90/vision/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
