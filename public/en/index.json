@@ -1,0 +1,148 @@
+[
+{
+	"uri": "http://localhost:1313/first-90-days/en/first30/current-state/",
+	"title": "Current State",
+	"tags": [],
+	"description": "",
+	"content": "The first step is to store your content in a secure and scalable way. A simple and flexible approach for static content that you want to make available on the internet is to store it in an Amazon S3 “bucket.” S3 is easy to set up and use, and is designed to store and retrieve any number of files or objects from anywhere on the internet. It’s simple to use and offers durable, highly available, and scalable data storage at low cost.\nWhen you put your content in an S3 bucket in the cloud, a lot of things become much easier. First, you don’t need to plan for and allocate a specific amount of storage space because S3 buckets scale automatically. In addition, because S3 is a serverless service, you don’t need to manage or patch servers that store files yourself; you just put and get your content. Finally, even if you require a server for your application (for example, because you have a dynamic application), the server can be smaller because it doesn’t have to handle requests for static content.\nHowever, lets take a look at the scenario shown in the following illustration. We’ve stored our content in an S3 bucket located in a region in Europe, and we have users located around the world who access that content. As the arrows show, whenever a user requests content, the request must go over the public internet to the source location–the S3 bucket in Europe. Depending on the user’s location, this can take a long time. The delays might even cause some user requests to bounce and return an error from the page.\nThis is where Cloudfront comes in\u0026hellip;\n"
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/first30/",
+	"title": "First 30 Days",
+	"tags": [],
+	"description": "",
+	"content": "Getting Acquainted \u0026amp; Assessing the landscape Understand the Current State: A key focus would be on understanding the current architectural landscape and technology stack. This includes reviewing existing documentation, systems, and processes. An important part of this would be conducting one-on-one meetings with key stakeholders, including executives, team members, and other department leads, to understand their perspectives, challenges, and expectations. Team Integration: Building relationships within the architecture and engineering teams is crucial. A priority would be to spend time getting to know team members, understanding their roles, strengths, and areas for development. Part of this would be reviewing the team\u0026rsquo;s current skill sets and any immediate training needs or gaps that need addressing.\u0026quot; Identify Quick Wins Look for opportunities for quick wins—areas where small changes can yield immediate improvements, helping to build credibility and momentum. "
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/60to90/processes/",
+	"title": "Review Processes",
+	"tags": [],
+	"description": "",
+	"content": "\nThe viewer requests the website at www.example.com. If the requested object is cached, CloudFront returns the object from its cache to the viewer. If the object is not in CloudFront’s cache, CloudFront requests the object from the origin (an S3 bucket). S3 returns the object to CloudFront, which triggers the Lambda@Edge origin response event. The object, including the security headers added by the Lambda@Edge function, is added to CloudFront’s cache. (Not shown) The objects is returned to the viewer. Subsequent responses for the object are served from the CloudFront cache. "
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/conclusion/overview/",
+	"title": "Solution Overview",
+	"tags": [],
+	"description": "",
+	"content": "\nThe viewer requests the website at www.example.com. If the requested object is cached, CloudFront returns the object from its cache to the viewer. If the object is not in CloudFront’s cache, CloudFront requests the object from the origin (an S3 bucket). S3 returns the object to CloudFront, which triggers the Lambda@Edge origin response event. The object, including the security headers added by the Lambda@Edge function, is added to CloudFront’s cache. (Not shown) The objects is returned to the viewer. Subsequent responses for the object are served from the CloudFront cache. "
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/30to60/strategic-plan/",
+	"title": "Strategic Plan",
+	"tags": [],
+	"description": "",
+	"content": "Route 53 To register a new domain using Route 53\nSign in to the AWS Management Console and open the Route 53 console at https://console.aws.amazon.com/route53/. If you\u0026rsquo;re new to Route 53, choose Get started.\nIf you\u0026rsquo;re already using Route 53, in the navigation pane, choose Registered domains.\nChoose Register domain, and specify the domain that you want to register: Enter the domain name that you want to register, and choose Check to find out whether the domain name is available.\nIf the domain is available, choose Add to cart. The domain name appears in your shopping cart.\nChoose Continue.\nOn the Contact Details for Your n Domains page, enter contact information for the domain registrant, administrator, and technical contacts. The values that you enter here are applied to all of the domains that you\u0026rsquo;re registering. Choose Continue.\nIf the registry requires verification and if it\u0026rsquo;s possible to verify the address during domain registration, the console displays a Verify the Email Address for the Registrant Contact section\nReview the information that you entered Choose whether you want us to automatically renew your domain registration before the expiration date. read the terms of service, and select the check box to confirm that you\u0026rsquo;ve read the terms of service. Choose Complete Purchase. A confirmation email will be sent from noreply@registrar.amazon.com. The registrant contact must follow the instructions in the email to confirm that the email was received, or AWS will suspend the domain as required by ICANN. When a domain is suspended, it\u0026rsquo;s not accessible on the internet. A hosted zone for the new domain is automatically created for you once the domain is created.\n"
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/30to60/",
+	"title": "Days 30 - 60",
+	"tags": [],
+	"description": "",
+	"content": "Formulating Strategies and Beginning Implementation Develop a Strategic Plan Based on initial findings, start formulating a strategic plan for the architecture team. This would involve setting short-term and long-term goals that align with the company\u0026rsquo;s strategic objectives. Prioritize key projects and initiatives, focusing on areas that deliver the most value to the business.\nTeam Integration Begin work on critical projects, particularly those identified as high-impact or quick wins. This could include optimizing existing systems, addressing technical debt, or starting initial phases of new technology integration. Ensure to engage with cross-functional teams to ensure alignment and collaboration on these initiatives.\nIdentify Quick Wins Establish regular communication channels, such as bi-weekly updates or town halls, to keep the team and stakeholders informed about progress, challenges, and next steps.\n"
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/60to90/innovation/",
+	"title": "Drive Innovation",
+	"tags": [],
+	"description": "",
+	"content": "S3 configuration This solution creates an S3 bucket that hosts your static website’s assets. The website is only accessible via CloudFront, not directly from S3.\nCloudFront configuration This solution creates a CloudFront distribution to serve your website to viewers. The distribution is configured with a CloudFront origin access identity to make sure that the website is only accessible via CloudFront, not directly from S3. The distribution is also configured with a Lambda@Edge function that adds security headers to every response.\nACM configuration This solution creates an SSL/TLS certificate in ACM, and attaches it to the CloudFront distribution. This enables the distribution to serve your domain’s website using HTTPS.\nLambda@Edge configuration This solution creates a Lambda@Edge function that’s triggered on an origin response event. The function adds security headers to every response served by CloudFront.\nThe security headers can help mitigate some attacks, as explained in this blog post: Adding HTTP Security Headers Using Lambda@Edge and Amazon CloudFront. Security headers are a group of headers in the web server response that tell web browsers to take extra security precautions. This solution adds the following headers to each response:\nStrict-Transport-Security Content-Security-Policy X-Content-Type-Options X-Frame-Options X-XSS-Protection Referrer-Policy For more information, see Mozilla’s web security guidelines.\n"
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/conclusion/details/",
+	"title": "Solution Details",
+	"tags": [],
+	"description": "",
+	"content": "S3 configuration This solution creates an S3 bucket that hosts your static website’s assets. The website is only accessible via CloudFront, not directly from S3.\nCloudFront configuration This solution creates a CloudFront distribution to serve your website to viewers. The distribution is configured with a CloudFront origin access identity to make sure that the website is only accessible via CloudFront, not directly from S3. The distribution is also configured with a Lambda@Edge function that adds security headers to every response.\nACM configuration This solution creates an SSL/TLS certificate in ACM, and attaches it to the CloudFront distribution. This enables the distribution to serve your domain’s website using HTTPS.\nLambda@Edge configuration This solution creates a Lambda@Edge function that’s triggered on an origin response event. The function adds security headers to every response served by CloudFront.\nThe security headers can help mitigate some attacks, as explained in this blog post: Adding HTTP Security Headers Using Lambda@Edge and Amazon CloudFront. Security headers are a group of headers in the web server response that tell web browsers to take extra security precautions. This solution adds the following headers to each response:\nStrict-Transport-Security Content-Security-Policy X-Content-Type-Options X-Frame-Options X-XSS-Protection Referrer-Policy For more information, see Mozilla’s web security guidelines.\n"
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/30to60/team-integration/",
+	"title": "Team Integration",
+	"tags": [],
+	"description": "",
+	"content": "ACM To enable SSL on our site we need to get a certificate for the domain. Handily for domains registered through route53 we can use ACM to create the required cert.\nSign in to the AWS Management Console and open the Route 53 console at https://console.aws.amazon.com/acm/. Click Register Certificate Request a public cert Specify the domain names for the cert Add all subdomains required to the cert. For example domain.com, www.domain.com, *.domain.com. For a root domain like www.domain.com you will need both domain.com and www.domain.com on the cert.\nValidate you own the domain Choose how you wish to validate the domain. The easiest option is to use DNS validation. With this approach you need to add some DNS values to your route53 hosted zone. Add tags to the cert Review the cert details Validate the domain We chose earlier to validate the domain using the DNS method This is made super easy in the console as we are using route53. Expand each subdomain Click Create record in Route 53 The records are added for you Alternatively you can go into the hosted zone in Route53 and add the CNAME values yourself.\nWait for AWS to validate domain and issue the cert This can take up to 24 hours but normally happens in a couple of minutes. Once completed the status wil be set to issued. "
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/first30/team-integration/",
+	"title": "Team Integration",
+	"tags": [],
+	"description": "",
+	"content": "Storing your static content with S3 provides a lot of advantages. But to help optimize your application’s performance and security while effectively managing cost, you can also set up Amazon CloudFront to work with your S3 bucket to serve and protect the content. CloudFront is a content delivery network (CDN) service that delivers static and dynamic web content, video streams, and APIs around the world, securely and at scale. By design, delivering data out of CloudFront can be more cost effective than delivering it from S3 directly to your users.\nCloudFront serves content through a worldwide network of data centers called Edge Locations. Using edge servers to cache and serve content improves performance by providing content closer to where viewers are located. CloudFront has edge servers in locations all around the world, as you can see from the following map:\nWhen a user requests content that you serve with CloudFront, their request is routed to a nearby Edge Location. If CloudFront has a cached copy of the requested file, CloudFront delivers it to the user, providing a fast (low-latency) response. If the file they’ve requested isn’t yet cached, CloudFront retrieves it from your origin – for example, the S3 bucket where you’ve stored your content. Then, for the next local request for the same content, it’s already cached nearby and can be served immediately.\nBy caching your content in Edge Locations, CloudFront reduces the load on your S3 bucket and helps ensure a faster response for your users when they request content.\nIn the following illustration, you can see that there are no longer requests traversing the globe to get to our content hosted in an S3 bucket. Instead, requests are routed to the “least latent” Edge Location; that is, the closest in terms of delivery speed. CloudFront then serves cached content quickly and directly to the requesting user nearby, as shown with the green arrows. If the content is not yet cached with an edge server, CloudFront retrieves it from the S3 bucket origin. And because the content traverses the AWS private network instead of the public internet and CloudFront optimizes the TCP handshake, the request and content return is still much faster than access across the public internet.\nBut how do we secure our content?\n"
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/60to90/",
+	"title": "Days 60 - 90",
+	"tags": [],
+	"description": "",
+	"content": "Scaling Efforts \u0026amp; Ensuring Sustainability Review \u0026amp; Refine Processes Conduct a thorough review of existing processes and workflows, identifying areas for improvement and implementing best practices to enhance efficiency and productivity. Introduce or refine metrics and KPIs to measure the success of the architecture team and ensure we are meeting our goals. Drive Innovation Begin exploring and piloting new technologies and methodologies that can bring long-term benefits to the organization. This could involve setting up innovation labs or initiating small proof-of-concept projects. Encourage a culture of continuous improvement and innovation within the team, fostering an environment where new ideas are welcomed and tested. Solidify Relationships \u0026amp; Foster Collaboration Continue to build strong relationships with key stakeholders, ensuring ongoing collaboration and alignment with business objectives. Promote cross-departmental initiatives to ensure that the architecture team is working effectively with other parts of the organization, such as product, operations, and business strategy. Strategic Alignment \u0026amp; Long-Term Vision By the end of the first 90 days, I would present a detailed roadmap for the next 6-12 months, including key projects, initiatives, and goals. This roadmap would be aligned with the overall strategic direction of the company. Ensure that the architecture team\u0026rsquo;s efforts are clearly aligned with the company’s long-term vision, setting the stage for sustained success and growth. "
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/conclusion/deploy/",
+	"title": "Deploy Stack",
+	"tags": [],
+	"description": "",
+	"content": "To deploy the solution using the CloudFormation console\nClick the Launch on AWS button to open the solution in the CloudFormation console.\nIf necessary, sign in with your AWS account credentials.\nYou should see a Create stack page, with pre-populated fields that specify the CloudFormation template. Choose the Next button at the bottom of the page.\nOn the Specify stack details page, enter values for the following fields:\nSubDomain: The subdomain for your registered domain name. Viewers use the subdomain to access your website, for example: www.example.com. We recommend using the default value of www as the subdomain. DomainName: Your registered domain name, such as example.com. This domain must be pointed to a Route 53 hosted zone. After entering values, choose the Next button.\nOn the Configure stack options page, you can optionally add tags and other stack options. When finished, choose the Next button.\nOn the Review page, you must scroll down and check the two boxes in the Capabilities section:\nI acknowledge that AWS CloudFormation might create IAM resources with custom names. I acknowledge that AWS CloudFormation might require the following capability: CAPABILITY_AUTO_EXPAND These capabilities allow CloudFormation to create an IAM role that allows access to the stack’s resources, and to name the resources dynamically.\nChoose the Create stack button.\nWait for the CloudFormation stack to launch. The stack launches some nested stacks, and can take several minutes to finish. When it’s launched, the Status changes to CREATE_COMPLETE.\nAfter the stack is launched, go to www.example.com to view your website (replace example.com with your domain name). You should see the website’s default content:\n"
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/60to90/collaboration/",
+	"title": "Foster Collaboration",
+	"tags": [],
+	"description": "",
+	"content": "To deploy the solution using the CloudFormation console\nClick the Launch on AWS button to open the solution in the CloudFormation console.\nIf necessary, sign in with your AWS account credentials.\nYou should see a Create stack page, with pre-populated fields that specify the CloudFormation template. Choose the Next button at the bottom of the page.\nOn the Specify stack details page, enter values for the following fields:\nSubDomain: The subdomain for your registered domain name. Viewers use the subdomain to access your website, for example: www.example.com. We recommend using the default value of www as the subdomain. DomainName: Your registered domain name, such as example.com. This domain must be pointed to a Route 53 hosted zone. After entering values, choose the Next button.\nOn the Configure stack options page, you can optionally add tags and other stack options. When finished, choose the Next button.\nOn the Review page, you must scroll down and check the two boxes in the Capabilities section:\nI acknowledge that AWS CloudFormation might create IAM resources with custom names. I acknowledge that AWS CloudFormation might require the following capability: CAPABILITY_AUTO_EXPAND These capabilities allow CloudFormation to create an IAM role that allows access to the stack’s resources, and to name the resources dynamically.\nChoose the Create stack button.\nWait for the CloudFormation stack to launch. The stack launches some nested stacks, and can take several minutes to finish. When it’s launched, the Status changes to CREATE_COMPLETE.\nAfter the stack is launched, go to www.example.com to view your website (replace example.com with your domain name). You should see the website’s default content:\n"
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/30to60/quick-wins/",
+	"title": "Quick Wins",
+	"tags": [],
+	"description": "",
+	"content": "S3 Sign in to the AWS Management Console and open the S3 console at https://console.aws.amazon.com/s3/. For S3 and Cloudfront there is slightly different configuration depending if the site is a SPA or a traditional layered website with a nested folder setup.\nSingle Page App Very easy setup here. Create a new bucket and call it your domain name (note you can call the bucket anything really for an SPA but for consistency I find it good to use a common naming approach as with regular websites) Traditional layered Site Create a new bucket and call it your domain name. For static sites hosted in S3, to be used with cloudfront, the bucket name must match the domain name of the static site. Allow public access to the bucket Got to Permissions Block public access Uncheck the block all public access checkbox and save Turn on static website hosting Go to properties Static website hosting Select Use this bucket to host a website We do need to set bucket policies to decide who can have access to our buckets contents. We will come back to this after setting up our cloudfront distribution.\n"
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/first30/quick-wins/",
+	"title": "Quick Wins",
+	"tags": [],
+	"description": "",
+	"content": "Often, companies that distribute content over the internet want to restrict access to documents, business data, media streams, or other content so that only selected users, like paying customers, can request it. By using CloudFront, we can set up additional access restrictions like geo-restrictions, signed URLs, and signed cookies, to further constrain access to the content following different criteria.\nAnother security feature of CloudFront is Origin Access Identity (OAI), which restricts access to an S3 bucket and its content to only CloudFront and operations it performs. The CloudFormation template in final section of this walkthrough includes OAI to help ensure that your content is protected and restricted.\nCloudFront includes additional protection against malicious exploits. To provide these safeguards, CloudFront integrates with both AWS WAF, a web application firewall that helps protect web applications from common web exploits, and AWS Shield, a managed DDoS protection service for web applications running on AWS. AWS WAF lets you control access to your content, based on conditions that you specify, such as IP addresses or the query string value on a content request. CloudFront then responds with either the requested content, if the conditions are met, or with an HTTP 403 status code (Forbidden). All CloudFront customers benefit from the automatic protection of AWS Shield Standard, at no additional charge. But customers who want deeper insights, enhanced mitigations, and cost protections against DDoS attacks can use AWS Shield Advanced.\n"
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/conclusion/",
+	"title": "Summary &amp; Conclusions",
+	"tags": [],
+	"description": "",
+	"content": "Now we\u0026rsquo;ve walked though the architecture behind hosting a static website on AWS and manually created it via the console, it\u0026rsquo;s time to write out the infrastructure as code.\n"
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/60to90/vision/",
+	"title": "Vision",
+	"tags": [],
+	"description": "",
+	"content": "S3 configuration This solution creates an S3 bucket that hosts your static website’s assets. The website is only accessible via CloudFront, not directly from S3.\nCloudFront configuration This solution creates a CloudFront distribution to serve your website to viewers. The distribution is configured with a CloudFront origin access identity to make sure that the website is only accessible via CloudFront, not directly from S3. The distribution is also configured with a Lambda@Edge function that adds security headers to every response.\nACM configuration This solution creates an SSL/TLS certificate in ACM, and attaches it to the CloudFront distribution. This enables the distribution to serve your domain’s website using HTTPS.\nLambda@Edge configuration This solution creates a Lambda@Edge function that’s triggered on an origin response event. The function adds security headers to every response served by CloudFront.\nThe security headers can help mitigate some attacks, as explained in this blog post: Adding HTTP Security Headers Using Lambda@Edge and Amazon CloudFront. Security headers are a group of headers in the web server response that tell web browsers to take extra security precautions. This solution adds the following headers to each response:\nStrict-Transport-Security Content-Security-Policy X-Content-Type-Options X-Frame-Options X-XSS-Protection Referrer-Policy For more information, see Mozilla’s web security guidelines.\n"
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/",
+	"title": "Head of Architecture - First 90 Days",
+	"tags": [],
+	"description": "",
+	"content": "Introduction This dynamic architecture walkthrough steps through how to host an SSL static site on AWS without having to maintain any servers.\nWe will first step through each AWS service used and how to configure them manually through the console, explaining what each piece does.\nFinally there will be a set of Cloudformation templates provided to automate creating something similar to below.\n"
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/credits/",
+	"title": "Credits",
+	"tags": [],
+	"description": "",
+	"content": "This site is built on top of the Hugo Learn Theme.\nContributors Thanks to them for making Open Source Software a better place !\nAnd a special thanks to @vjeantet for his work on docdock, a fork of hugo-theme-learn. v2.0.0 of this theme is inspired by his work.\nPackages and libraries mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services\u0026hellip; horsey - Progressive and customizable autocomplete component clipboard.js - copy text to clipboard highlight.js - Javascript syntax highlighter modernizr - A JavaScript toolkit that allows web developers to use new CSS3 and HTML5 features while maintaining a fine level of control over browsers that don\u0026rsquo;t support Tooling Hugo "
+},
+{
+	"uri": "http://localhost:1313/first-90-days/en/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
