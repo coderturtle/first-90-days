@@ -7,7 +7,7 @@ chapter: false
 
 ### Measuring the Impact and Usefulness of Architects within Teams
 
-![Architecture](images/architect.png)
+![Architect](images/architect.png)
 
 **Objective:**
 

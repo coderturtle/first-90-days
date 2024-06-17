@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/first-90-days/en/60to90/collaboration/example-collab-model/</loc>
+  </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/current-state/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/30to60/team-integration/coe/</loc>
@@ -20,9 +22,11 @@
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/</loc>
   </url><url>
+    <loc>http://localhost:1313/first-90-days/en/60to90/vision/gremlin-roadmap/</loc>
+  </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/processes/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/conclusion/overview/</loc>
+    <loc>http://localhost:1313/first-90-days/en/conclusion/architect/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/30to60/strategic-plan/</loc>
   </url><url>
@@ -32,16 +36,14 @@
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/team-integration/framework/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/conclusion/details/</loc>
-  </url><url>
     <loc>http://localhost:1313/first-90-days/en/30to60/team-integration/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/team-integration/</loc>
   </url><url>
+    <loc>http://localhost:1313/first-90-days/en/conclusion/architecture/</loc>
+  </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/first-90-days/en/conclusion/deploy/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/collaboration/</loc>
   </url><url>
