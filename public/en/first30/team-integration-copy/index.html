@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/first-90-days/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=first-90-days/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="description" content="Example of first 90 days reviewing an architecture thene">
+<meta name="author" content="Derm Duncan">
+
+    <link rel="icon" href="/first-90-days/images/favicon.png" type="image/png">
+
+    <title>Team Integration :: Head of Architecture First 90 Days</title>
+
+    
+    <link href="/first-90-days/css/nucleus.css?1718610396" rel="stylesheet">
+    <link href="/first-90-days/css/fontawesome-all.min.css?1718610396" rel="stylesheet">
+    <link href="/first-90-days/css/hybrid.css?1718610396" rel="stylesheet">
+    <link href="/first-90-days/css/featherlight.min.css?1718610396" rel="stylesheet">
+    <link href="/first-90-days/css/perfect-scrollbar.min.css?1718610396" rel="stylesheet">
+    <link href="/first-90-days/css/auto-complete.css?1718610396" rel="stylesheet">
+    <link href="/first-90-days/css/atom-one-dark-reasonable.css?1718610396" rel="stylesheet">
+    <link href="/first-90-days/css/theme.css?1718610396" rel="stylesheet">
+    <link href="/first-90-days/css/hugo-theme.css?1718610396" rel="stylesheet">
+    
+    <link href="/first-90-days/css/theme-blue.css?1718610396" rel="stylesheet">
+    
+    
+
+    <script src="/first-90-days/js/jquery-3.3.1.min.js?1718610396"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/first-90-days/en/first30/team-integration-copy/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+  <img src="images/cloud-gremlin-blue.png" />
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/first-90-days/js/lunr.min.js?1718610396"></script>
+<script type="text/javascript" src="/first-90-days/js/auto-complete.js?1718610396"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/first-90-days\/";
+    
+</script>
+<script type="text/javascript" src="/first-90-days/js/search.js?1718610396"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/" title="First 30 Days" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/">
+          <b>1. </b>First 30 Days
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/current-state/" title="Current State" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/current-state/">
+          <b>a. </b>Current State
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/current-state/sample-report/" title="Example Report" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/current-state/sample-report/">
+          <b>i. </b>Example Report
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/team-integration-copy/" title="Team Integration" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="/first-90-days/en/first30/team-integration-copy/">
+          <b>b. </b>Team Integration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/team-integration/" title="Team Integration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/team-integration/">
+          <b>b. </b>Team Integration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/quick-wins/" title="Quick Wins" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/quick-wins/">
+          <b>c. </b>Quick Wins
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/" title="Days 30 - 60" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/">
+          <b>2. </b>Days 30 - 60
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/strategic-plan/" title="Strategic Plan" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/strategic-plan/">
+          <b>a. </b>Strategic Plan
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/team-integration/" title="Team Integration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/team-integration/">
+          <b>b. </b>Team Integration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/quick-wins/" title="Quick Wins" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/quick-wins/">
+          <b>c. </b>Quick Wins
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/" title="Days 60 - 90" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/">
+          <b>3. </b>Days 60 - 90
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/processes/" title="Review Processes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/processes/">
+          <b>a. </b>Review Processes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/innovation/" title="Drive Innovation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/innovation/">
+          <b>b. </b>Drive Innovation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/collaboration/" title="Foster Collaboration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/collaboration/">
+          <b>c. </b>Foster Collaboration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/" title="Vision" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/">
+          <b>b. </b>Vision
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/" title="Summary &amp; Conclusions" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/">
+          <b>4. </b>Summary &amp; Conclusions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/overview/" title="Solution Overview" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/overview/">
+          <b>a. </b>Solution Overview
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/details/" title="Solution Details" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/details/">
+          <b>b. </b>Solution Details
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/deploy/" title="Deploy Stack" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/deploy/">
+          <b>c. </b>Deploy Stack
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/coderturtle/first-90-days"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://coderturtle.githubpages.io/first-90-days"><i class='fas fa-fw fa-camera'></i> Showcases</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://gohugo.io/"><i class='fas fa-fw fa-bookmark'></i> Hugo Documentation</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download matcornic/hugo-theme-learn on GitHub">Download</a>
+
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn" data-icon="octicon-star" data-show-count="true" aria-label="Star matcornic/hugo-theme-learn on GitHub">Star</a>
+
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork matcornic/hugo-theme-learn on GitHub">Fork</a>
+
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/coderturtle/first-90-daysfirst30/team-integration%20copy/_index.en.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/first-90-days/en/'>Head of Architecture - First 90 Days</a> > <a href='/first-90-days/en/first30/'>First 30 Days</a> > Team Integration
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#team-integration-detailed-approach">Team Integration: Detailed Approach</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Team Integration
+            </h1>
+          
+
+        
+
+
+
+	<h3 id="team-integration-detailed-approach">Team Integration: Detailed Approach</h3>
+<p><img alt="Team Integratiom" src="images/team-integration.png"></p>
+<h4 id="1-getting-to-know-the-engineering-and-architecture-teams">1. Getting to Know the Engineering and Architecture Teams</h4>
+<p><strong>Objective:</strong>
+To build strong relationships, understand team dynamics, and establish a foundation of trust and collaboration.</p>
+<p><strong>Steps:</strong></p>
+<p><strong>a. Initial Meetings and Introductions:</strong></p>
+<ul>
+<li><strong>Organize Team Meetings:</strong>
+<ul>
+<li>Schedule initial meetings with each team (engineering, architecture) to introduce yourself and outline your goals.</li>
+<li>Conduct one-on-one meetings with team members to understand their roles, responsibilities, and perspectives.</li>
+</ul>
+</li>
+<li><strong>Team Building Activities:</strong>
+<ul>
+<li>Plan team-building activities such as workshops, hackathons, or informal gatherings to foster camaraderie and teamwork.</li>
+</ul>
+</li>
+</ul>
+<p><strong>b. Understanding Team Dynamics:</strong></p>
+<ul>
+<li><strong>Observe Team Interactions:</strong>
+<ul>
+<li>Attend team meetings, stand-ups, and brainstorming sessions to observe how team members interact and collaborate.</li>
+</ul>
+</li>
+<li><strong>Identify Key Contributors:</strong>
+<ul>
+<li>Recognize individuals who are key contributors and influencers within the teams.</li>
+</ul>
+</li>
+</ul>
+<p><strong>c. Establishing Open Communication:</strong></p>
+<ul>
+<li><strong>Create Open Channels:</strong>
+<ul>
+<li>Set up regular check-ins, feedback sessions, and open office hours to encourage communication.</li>
+<li>Use collaboration tools such as Slack, Microsoft Teams, or Confluence to facilitate ongoing dialogue.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="2-identifying-skills-gaps">2. Identifying Skills Gaps</h4>
+<p><strong>Objective:</strong>
+To assess the current skill levels within the teams and identify areas for improvement or development.</p>
+<p><strong>Steps:</strong></p>
+<p><strong>a. Skills Inventory:</strong></p>
+<ul>
+<li><strong>Create a Skills Matrix:</strong>
+<ul>
+<li>Develop a skills matrix listing the key competencies required for the teams (e.g., coding languages, architectural principles, DevOps tools).</li>
+<li>Have team members self-assess their proficiency levels against these competencies.</li>
+</ul>
+</li>
+</ul>
+<p><strong>b. Team Feedback:</strong></p>
+<ul>
+<li><strong>Gather Feedback from Teams:</strong>
+<ul>
+<li>Gather feedback from team leads and peers. Leverage the framework below to ensure consistent approach when meeting with different teams.</li>
+<li>Identify any recurring themes or areas where team members have expressed a desire for growth.</li>
+</ul>
+</li>
+</ul>
+<p><strong>c. Gap Analysis:</strong></p>
+<ul>
+<li><strong>Analyze Skills Data:</strong>
+<ul>
+<li>Compare the skills matrix against the self assessments and feedback reviews to identify gaps.</li>
+<li>Highlight critical gaps that need immediate attention versus those that can be addressed over time.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="3-assessing-the-role-of-an-architect-in-the-teams">3. Assessing the Role of an Architect in the Teams</h4>
+<p><strong>Objective:</strong>
+To evaluate the current role of architects within the teams and ensure they are effectively contributing to the overall goals.</p>
+<p><strong>Steps:</strong></p>
+<p><strong>a. Role Clarification:</strong></p>
+<ul>
+<li><strong>Define Architect Responsibilities:</strong>
+<ul>
+<li>Clearly outline the responsibilities and expectations for architects, including technical leadership, mentoring, and design oversight.</li>
+</ul>
+</li>
+<li><strong>Align with Business Goals:</strong>
+<ul>
+<li>Ensure that the architect role is aligned with the organization’s strategic objectives and technology roadmap.</li>
+</ul>
+</li>
+</ul>
+<p><strong>b. Collaboration and Influence:</strong></p>
+<ul>
+<li><strong>Assess Collaboration:</strong>
+<ul>
+<li>Evaluate how architects collaborate with other team members, including developers, product managers, and operations.</li>
+</ul>
+</li>
+<li><strong>Measure Influence:</strong>
+<ul>
+<li>Determine the influence architects have on decision-making processes and their ability to drive architectural standards and best practices.</li>
+</ul>
+</li>
+</ul>
+<p><strong>c. Feedback and Improvement:</strong></p>
+<ul>
+<li><strong>Gather Feedback:</strong>
+<ul>
+<li>Solicit feedback from peers, team leads, and stakeholders about the architects’ performance and impact.</li>
+</ul>
+</li>
+<li><strong>Identify Improvement Areas:</strong>
+<ul>
+<li>Identify areas where architects can improve, such as communication skills, consistency across teams, technical knowledge, or leadership capabilities.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="4-framework-to-measure-the-effectiveness-of-the-architect-role">4. Framework to Measure the Effectiveness of the Architect Role</h4>
+<p><strong>Objective:</strong>
+To implement a framework that measures the effectiveness of architects in achieving their goals and contributing to the team’s success.</p>
+<p><strong>Framework:</strong></p>
+<p><strong>a. Key Performance Indicators (KPIs):</strong></p>
+<ul>
+<li><strong>Technical Excellence:</strong>
+<ul>
+<li>Code Quality: Measure the quality of code reviews and adherence to coding standards.</li>
+<li>Design Quality: Assess the robustness and scalability of architectural designs.</li>
+<li>Reusability: What patterns, reference architectures or tools are developed which can be reused for similar use cases in the future.</li>
+</ul>
+</li>
+<li><strong>Project Impact:</strong>
+<ul>
+<li>Project Delivery: Track the success rate of projects delivered on time and within budget.</li>
+<li>Innovation: Measure contributions to innovative solutions and improvements in technology.</li>
+</ul>
+</li>
+</ul>
+<p><strong>b. Collaboration and Leadership:</strong></p>
+<ul>
+<li><strong>Team Collaboration:</strong>
+<ul>
+<li>Peer Feedback: Gather feedback on how well architects collaborate and support their peers.</li>
+<li>Cross-Functional Influence: Evaluate the impact of architects on cross-functional initiatives.</li>
+</ul>
+</li>
+<li><strong>Mentorship:</strong>
+<ul>
+<li>Training Sessions: Track the number and effectiveness of training sessions or knowledge-sharing activities led by architects.</li>
+<li>Mentee Development: Assess the growth and development of team members mentored by architects.</li>
+</ul>
+</li>
+</ul>
+<p><strong>c. Business Alignment:</strong></p>
+<ul>
+<li><strong>Strategic Contribution:</strong>
+<ul>
+<li>Alignment with Business Goals: Measure the alignment of architectural decisions with business objectives.</li>
+<li>Stakeholder Satisfaction: Gather feedback from stakeholders on the architects’ ability to meet their needs and expectations.</li>
+</ul>
+</li>
+</ul>
+<p><strong>d. Continuous Improvement:</strong></p>
+<ul>
+<li><strong>Learning and Development:</strong>
+<ul>
+<li>Professional Development: Track the architects’ commitment to continuous learning through certifications, training, and conferences.</li>
+<li>Adaptability: Measure how well architects adapt to new technologies and evolving business requirements.</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/first-90-days/en/first30/current-state/sample-report/" title="Example Report"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/first-90-days/en/first30/team-integration/" title="Team Integration" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/first-90-days/js/clipboard.min.js?1718610396"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.min.js?1718610396"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.jquery.min.js?1718610396"></script>
+    <script src="/first-90-days/js/jquery.sticky.js?1718610396"></script>
+    <script src="/first-90-days/js/featherlight.min.js?1718610396"></script>
+    <script src="/first-90-days/js/highlight.pack.js?1718610396"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/first-90-days/js/modernizr.custom-3.6.0.js?1718610396"></script>
+    <script src="/first-90-days/js/learn.js?1718610396"></script>
+    <script src="/first-90-days/js/hugo-learn.js?1718610396"></script>
+    
+        
+            <script src="/first-90-days/mermaid/mermaid.js?1718610396"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105947713-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

@@ -12,21 +12,21 @@
     <title>Quick Wins :: Head of Architecture First 90 Days</title>
 
     
-    <link href="/first-90-days/css/nucleus.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/fontawesome-all.min.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/hybrid.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/featherlight.min.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/perfect-scrollbar.min.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/auto-complete.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/atom-one-dark-reasonable.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/theme.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/hugo-theme.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/nucleus.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/fontawesome-all.min.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/hybrid.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/featherlight.min.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/perfect-scrollbar.min.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/auto-complete.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/atom-one-dark-reasonable.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/theme.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/hugo-theme.css?1718622863" rel="stylesheet">
     
-    <link href="/first-90-days/css/theme-blue.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/theme-blue.css?1718622863" rel="stylesheet">
     
     
 
-    <script src="/first-90-days/js/jquery-3.3.1.min.js?1718577569"></script>
+    <script src="/first-90-days/js/jquery-3.3.1.min.js?1718622863"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/first-90-days/js/lunr.min.js?1718577569"></script>
-<script type="text/javascript" src="/first-90-days/js/auto-complete.js?1718577569"></script>
+<script type="text/javascript" src="/first-90-days/js/lunr.min.js?1718622863"></script>
+<script type="text/javascript" src="/first-90-days/js/auto-complete.js?1718622863"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/first-90-days\/";
     
 </script>
-<script type="text/javascript" src="/first-90-days/js/search.js?1718577569"></script>
+<script type="text/javascript" src="/first-90-days/js/search.js?1718622863"></script>
 
     
   </div>
@@ -148,7 +148,7 @@
         
         ">
       <a href="/first-90-days/en/first30/current-state/sample-report/">
-          Example Report
+          <b>i. </b>Example Report
           
             <i class="fas fa-check read-icon"></i>
           
@@ -191,6 +191,46 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/team-integration/framework/" title="Example Framework" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/team-integration/framework/">
+          <b>i. </b>Example Framework
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -219,6 +259,46 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/quick-wins/local-dev-env/" title="Example Local Dev Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/quick-wins/local-dev-env/">
+          <b>i. </b>Example Local Dev Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -743,7 +823,17 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#identifying-opportunities-for-quick-wins-in-the-first-30-days">Identifying Opportunities for Quick Wins in the First 30 Days</a></li>
+        <li><a href="#areas-to-focus-on-for-quick-wins">Areas to Focus on for Quick Wins</a></li>
+        <li><a href="#steps-to-identify-and-implement-quick-wins">Steps to Identify and Implement Quick Wins</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -767,10 +857,153 @@
 
 
 
-	<p>Often, companies that distribute content over the internet want to restrict access to documents, business data, media streams, or other content so that only selected users, like paying customers, can request it. By using CloudFront, we can set up additional access restrictions like geo-restrictions, signed URLs, and signed cookies, to further constrain access to the content following different criteria.</p>
-<p>Another security feature of CloudFront is Origin Access Identity (OAI), which restricts access to an S3 bucket and its content to only CloudFront and operations it performs. The CloudFormation template in final section of this walkthrough includes OAI to help ensure that your content is protected and restricted.</p>
-<p><img alt="OAI" src="/first-90-days/en/first30/quick-wins/images/oai.png" title="OAI"></p>
-<p>CloudFront includes additional protection against malicious exploits. To provide these safeguards, CloudFront integrates with both AWS WAF, a web application firewall that helps protect web applications from common web exploits, and AWS Shield, a managed DDoS protection service for web applications running on AWS. AWS WAF lets you control access to your content, based on conditions that you specify, such as IP addresses or the query string value on a content request. CloudFront then responds with either the requested content, if the conditions are met, or with an HTTP 403 status code (Forbidden). All CloudFront customers benefit from the automatic protection of AWS Shield Standard, at no additional charge. But customers who want deeper insights, enhanced mitigations, and cost protections against DDoS attacks can use AWS Shield Advanced.</p>
+	<p><img alt="Quick Win" src="/first-90-days/en/first30/quick-wins/images/quick-win.png"></p>
+<h3 id="identifying-opportunities-for-quick-wins-in-the-first-30-days">Identifying Opportunities for Quick Wins in the First 30 Days</h3>
+<p><strong>Objective:</strong>
+To build credibility and momentum by achieving immediate improvements that have a noticeable impact on the team&rsquo;s efficiency, productivity, and morale.</p>
+<h3 id="areas-to-focus-on-for-quick-wins">Areas to Focus on for Quick Wins</h3>
+<h4 id="1-code-quality-and-technical-debt-reduction">1. <strong>Code Quality and Technical Debt Reduction</strong></h4>
+<p><strong>How:</strong></p>
+<ul>
+<li><strong>Code Reviews:</strong>
+<ul>
+<li>Conduct quick but thorough code reviews to identify and fix easily correctable issues.</li>
+<li>Introduce or improve automated code review tools like SonarQube to catch common issues.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Where to Look:</strong></p>
+<ul>
+<li>Identify parts of the codebase with high churn rates or frequent bug reports.</li>
+<li>Check for common code smells and low-hanging fruits in coding standards violations.</li>
+</ul>
+<h4 id="2-development-environment-and-tooling">2. <strong>Development Environment and Tooling</strong></h4>
+<p><strong>How:</strong></p>
+<ul>
+<li><strong>Improve Development Setup:</strong>
+<ul>
+<li>Streamline the setup process for development environments to reduce onboarding time for new developers.</li>
+<li>Create or update documentation and scripts to automate environment setup.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Where to Look:</strong></p>
+<ul>
+<li>Gather feedback from developers about pain points in their daily workflow.</li>
+<li>Identify common configuration issues or bottlenecks in the development environment setup.</li>
+</ul>
+<h4 id="3-cicd-pipeline-optimization">3. <strong>CI/CD Pipeline Optimization</strong></h4>
+<p><strong>How:</strong></p>
+<ul>
+<li><strong>Pipeline Efficiency:</strong>
+<ul>
+<li>Analyze the current CI/CD pipeline for inefficiencies or bottlenecks.</li>
+<li>Implement small, impactful changes such as parallelizing test runs or optimizing build processes.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Where to Look:</strong></p>
+<ul>
+<li>Review pipeline run times and failure rates.</li>
+<li>Look for stages in the pipeline that consistently take the longest or have the highest failure rates.</li>
+</ul>
+<h4 id="4-addressing-high-priority-bugs-and-issues">4. <strong>Addressing High-Priority Bugs and Issues</strong></h4>
+<p><strong>How:</strong></p>
+<ul>
+<li><strong>Bug Fixing:</strong>
+<ul>
+<li>Prioritize and address high-impact bugs that are causing significant issues for users.</li>
+<li>Allocate dedicated time for developers to focus on these bugs.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Where to Look:</strong></p>
+<ul>
+<li>Use bug tracking tools like Jira or Bugzilla to identify high-priority bugs.</li>
+<li>Review user feedback and support tickets to identify critical pain points.</li>
+</ul>
+<h4 id="5-improving-documentation">5. <strong>Improving Documentation</strong></h4>
+<p><strong>How:</strong></p>
+<ul>
+<li><strong>Enhance Documentation:</strong>
+<ul>
+<li>Focus on updating or creating documentation that is frequently used by developers or stakeholders.</li>
+<li>Address gaps in documentation for critical processes or components.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Where to Look:</strong></p>
+<ul>
+<li>Gather feedback from developers on areas where documentation is lacking or outdated.</li>
+<li>Identify documentation that is most frequently accessed or requested.</li>
+</ul>
+<h4 id="6-team-communication-and-collaboration">6. <strong>Team Communication and Collaboration</strong></h4>
+<p><strong>How:</strong></p>
+<ul>
+<li><strong>Boost Communication:</strong>
+<ul>
+<li>Implement or improve communication tools and practices, such as setting up regular stand-ups or team check-ins.</li>
+<li>Create channels for better cross-team collaboration, such as shared chat rooms or collaborative documents.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Where to Look:</strong></p>
+<ul>
+<li>Observe team interactions and gather feedback on communication challenges.</li>
+<li>Identify areas where lack of communication is causing delays or misunderstandings.</li>
+</ul>
+<h4 id="7-simple-process-improvements">7. <strong>Simple Process Improvements</strong></h4>
+<p><strong>How:</strong></p>
+<ul>
+<li><strong>Streamline Processes:</strong>
+<ul>
+<li>Identify and eliminate unnecessary steps in current processes that cause delays or inefficiencies.</li>
+<li>Implement small process improvements that simplify workflows, such as automating routine tasks.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Where to Look:</strong></p>
+<ul>
+<li>Review current workflows and processes with team leads and developers.</li>
+<li>Identify repetitive tasks that could be automated or streamlined.</li>
+</ul>
+<h3 id="steps-to-identify-and-implement-quick-wins">Steps to Identify and Implement Quick Wins</h3>
+<ol>
+<li>
+<p><strong>Engage with the Team:</strong></p>
+<ul>
+<li>Conduct one-on-one meetings and team discussions to gather insights and identify common pain points.</li>
+<li>Encourage team members to share their ideas for quick improvements.</li>
+</ul>
+</li>
+<li>
+<p><strong>Analyze Current Metrics:</strong></p>
+<ul>
+<li>Review existing performance metrics, bug reports, and workflow data to identify areas with immediate improvement potential.</li>
+</ul>
+</li>
+<li>
+<p><strong>Prioritize Quick Wins:</strong></p>
+<ul>
+<li>Prioritize quick wins based on their impact and feasibility.</li>
+<li>Focus on changes that require minimal effort but provide significant benefits.</li>
+</ul>
+</li>
+<li>
+<p><strong>Implement Changes:</strong></p>
+<ul>
+<li>Allocate resources and time to implement the identified quick wins.</li>
+<li>Monitor the implementation process to ensure timely completion and address any issues that arise.</li>
+</ul>
+</li>
+<li>
+<p><strong>Communicate Success:</strong></p>
+<ul>
+<li>Share the results of quick wins with the team and stakeholders.</li>
+<li>Highlight the positive impact of these changes to build momentum and encourage further improvements.</li>
+</ul>
+</li>
+</ol>
 
 
 
@@ -869,8 +1102,26 @@
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -886,8 +1137,29 @@
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -899,9 +1171,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1121,10 +1390,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/first-90-days/en/first30/team-integration/" title="Team Integration"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/first-90-days/en/first30/team-integration/framework/" title="Example Framework"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/first-90-days/en/30to60/" title="Days 30 - 60" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/first-90-days/en/first30/quick-wins/local-dev-env/" title="Example Local Dev Setup" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1134,19 +1403,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/first-90-days/js/clipboard.min.js?1718577569"></script>
-    <script src="/first-90-days/js/perfect-scrollbar.min.js?1718577569"></script>
-    <script src="/first-90-days/js/perfect-scrollbar.jquery.min.js?1718577569"></script>
-    <script src="/first-90-days/js/jquery.sticky.js?1718577569"></script>
-    <script src="/first-90-days/js/featherlight.min.js?1718577569"></script>
-    <script src="/first-90-days/js/highlight.pack.js?1718577569"></script>
+    <script src="/first-90-days/js/clipboard.min.js?1718622863"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.min.js?1718622863"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.jquery.min.js?1718622863"></script>
+    <script src="/first-90-days/js/jquery.sticky.js?1718622863"></script>
+    <script src="/first-90-days/js/featherlight.min.js?1718622863"></script>
+    <script src="/first-90-days/js/highlight.pack.js?1718622863"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/first-90-days/js/modernizr.custom-3.6.0.js?1718577569"></script>
-    <script src="/first-90-days/js/learn.js?1718577569"></script>
-    <script src="/first-90-days/js/hugo-learn.js?1718577569"></script>
+    <script src="/first-90-days/js/modernizr.custom-3.6.0.js?1718622863"></script>
+    <script src="/first-90-days/js/learn.js?1718622863"></script>
+    <script src="/first-90-days/js/hugo-learn.js?1718622863"></script>
     
         
-            <script src="/first-90-days/mermaid/mermaid.js?1718577569"></script>
+            <script src="/first-90-days/mermaid/mermaid.js?1718622863"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

@@ -5,18 +5,84 @@ pre: '<b>b. </b>'
 chapter: false
 ---
 
-Storing your static content with S3 provides a lot of advantages. But to help optimize your application’s performance and security while effectively managing cost, you can also set up Amazon CloudFront to work with your S3 bucket to serve and protect the content. CloudFront is a content delivery network (CDN) service that delivers static and dynamic web content, video streams, and APIs around the world, securely and at scale. By design, delivering data out of CloudFront can be more cost effective than delivering it from S3 directly to your users.
+### Team Integration: Detailed Approach
 
-CloudFront serves content through a worldwide network of data centers called Edge Locations. Using edge servers to cache and serve content improves performance by providing content closer to where viewers are located. CloudFront has edge servers in locations all around the world, as you can see from the following map:
+![Team Integratiom](images/team-integration.png)
 
-![Cloudfront](images/cloudfront-map.png 'Cloudfront')
+#### 1. Getting to Know the Engineering and Architecture Teams
 
-When a user requests content that you serve with CloudFront, their request is routed to a nearby Edge Location. If CloudFront has a cached copy of the requested file, CloudFront delivers it to the user, providing a fast (low-latency) response. If the file they’ve requested isn’t yet cached, CloudFront retrieves it from your origin – for example, the S3 bucket where you’ve stored your content. Then, for the next local request for the same content, it’s already cached nearby and can be served immediately.
+**Objective:**
+To build strong relationships, understand team dynamics, and establish a foundation of trust and collaboration.
 
-By caching your content in Edge Locations, CloudFront reduces the load on your S3 bucket and helps ensure a faster response for your users when they request content.
+**Steps:**
 
-In the following illustration, you can see that there are no longer requests traversing the globe to get to our content hosted in an S3 bucket. Instead, requests are routed to the “least latent” Edge Location; that is, the closest in terms of delivery speed. CloudFront then serves cached content quickly and directly to the requesting user nearby, as shown with the green arrows. If the content is not yet cached with an edge server, CloudFront retrieves it from the S3 bucket origin. And because the content traverses the AWS private network instead of the public internet and CloudFront optimizes the TCP handshake, the request and content return is still much faster than access across the public internet.
+**a. Initial Meetings and Introductions:**
+- **Organize Team Meetings:**
+  - Schedule initial meetings with each team (engineering, architecture) to introduce yourself and outline your goals.
+  - Conduct one-on-one meetings with team members to understand their roles, responsibilities, and perspectives.
+- **Team Building Activities:**
+  - Plan team-building activities such as workshops, hackathons, or informal gatherings to foster camaraderie and teamwork.
 
-![Cloudfront](images/s3-and-cloudfront.jpg 'Cloudfront')
+**b. Understanding Team Dynamics:**
+- **Observe Team Interactions:**
+  - Attend team meetings, stand-ups, and brainstorming sessions to observe how team members interact and collaborate.
+- **Identify Key Contributors:**
+  - Recognize individuals who are key contributors and influencers within the teams.
 
-But how do we secure our content?
+**c. Establishing Open Communication:**
+- **Create Open Channels:**
+  - Set up regular check-ins, feedback sessions, and open office hours to encourage communication.
+  - Use collaboration tools such as Slack, Microsoft Teams, or Confluence to facilitate ongoing dialogue.
+
+---
+
+#### 2. Identifying Skills Gaps
+
+**Objective:**
+To assess the current skill levels within the teams and identify areas for improvement or development.
+
+**Steps:**
+
+**a. Skills Inventory:**
+- **Create a Skills Matrix:**
+  - Develop a skills matrix listing the key competencies required for the teams (e.g., coding languages, architectural principles, DevOps tools).
+  - Have team members self-assess their proficiency levels against these competencies.
+
+**b. Team Feedback:**
+- **Gather Feedback from Teams:**
+  - Gather feedback from team leads and peers. The [example framework](./framework) could be used to help frame & structure these conversations.
+  - Identify any recurring themes or areas where team members have expressed a desire for growth.
+
+**c. Gap Analysis:**
+- **Analyze Skills Data:**
+  - Compare the skills matrix against the self assessments and feedback reviews to identify gaps.
+  - Highlight critical gaps that need immediate attention versus those that can be addressed over time.
+
+---
+
+#### 3. Assessing the Role of an Architect in the Teams
+
+**Objective:**
+To evaluate the current role of architects within the teams and ensure they are effectively contributing to the overall goals.
+
+**Steps:**
+
+**a. Role Clarification:**
+- **Define Architect Responsibilities:**
+  - Clearly outline the responsibilities and expectations for architects, including technical leadership, mentoring, and design oversight.
+- **Align with Business Goals:**
+  - Ensure that the architect role is aligned with the organization’s strategic objectives and technology roadmap.
+
+**b. Collaboration and Influence:**
+- **Assess Collaboration:**
+  - Evaluate how architects collaborate with other team members, including developers, product managers, and operations.
+- **Measure Influence:**
+  - Determine the influence architects have on decision-making processes and their ability to drive architectural standards and best practices.
+
+**c. Feedback and Improvement:**
+- **Gather Feedback:**
+  - Solicit feedback from peers, team leads, and stakeholders about the architects’ performance and impact.
+- **Identify Improvement Areas:**
+  - Identify areas where architects can improve, such as communication skills, consistency across teams, technical knowledge, or leadership capabilities.
+
+---

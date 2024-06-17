@@ -12,21 +12,21 @@
     <title>Team Integration :: Head of Architecture First 90 Days</title>
 
     
-    <link href="/first-90-days/css/nucleus.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/fontawesome-all.min.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/hybrid.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/featherlight.min.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/perfect-scrollbar.min.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/auto-complete.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/atom-one-dark-reasonable.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/theme.css?1718577569" rel="stylesheet">
-    <link href="/first-90-days/css/hugo-theme.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/nucleus.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/fontawesome-all.min.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/hybrid.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/featherlight.min.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/perfect-scrollbar.min.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/auto-complete.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/atom-one-dark-reasonable.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/theme.css?1718622863" rel="stylesheet">
+    <link href="/first-90-days/css/hugo-theme.css?1718622863" rel="stylesheet">
     
-    <link href="/first-90-days/css/theme-blue.css?1718577569" rel="stylesheet">
+    <link href="/first-90-days/css/theme-blue.css?1718622863" rel="stylesheet">
     
     
 
-    <script src="/first-90-days/js/jquery-3.3.1.min.js?1718577569"></script>
+    <script src="/first-90-days/js/jquery-3.3.1.min.js?1718622863"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/first-90-days/js/lunr.min.js?1718577569"></script>
-<script type="text/javascript" src="/first-90-days/js/auto-complete.js?1718577569"></script>
+<script type="text/javascript" src="/first-90-days/js/lunr.min.js?1718622863"></script>
+<script type="text/javascript" src="/first-90-days/js/auto-complete.js?1718622863"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/first-90-days\/";
     
 </script>
-<script type="text/javascript" src="/first-90-days/js/search.js?1718577569"></script>
+<script type="text/javascript" src="/first-90-days/js/search.js?1718622863"></script>
 
     
   </div>
@@ -148,7 +148,7 @@
         
         ">
       <a href="/first-90-days/en/first30/current-state/sample-report/">
-          Example Report
+          <b>i. </b>Example Report
           
             <i class="fas fa-check read-icon"></i>
           
@@ -191,6 +191,46 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/team-integration/framework/" title="Example Framework" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/team-integration/framework/">
+          <b>i. </b>Example Framework
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -219,6 +259,46 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/quick-wins/local-dev-env/" title="Example Local Dev Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/quick-wins/local-dev-env/">
+          <b>i. </b>Example Local Dev Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -743,7 +823,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#team-integration-detailed-approach">Team Integration: Detailed Approach</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -767,14 +855,125 @@
 
 
 
-	<p>Storing your static content with S3 provides a lot of advantages. But to help optimize your application’s performance and security while effectively managing cost, you can also set up Amazon CloudFront to work with your S3 bucket to serve and protect the content. CloudFront is a content delivery network (CDN) service that delivers static and dynamic web content, video streams, and APIs around the world, securely and at scale. By design, delivering data out of CloudFront can be more cost effective than delivering it from S3 directly to your users.</p>
-<p>CloudFront serves content through a worldwide network of data centers called Edge Locations. Using edge servers to cache and serve content improves performance by providing content closer to where viewers are located. CloudFront has edge servers in locations all around the world, as you can see from the following map:</p>
-<p><img alt="Cloudfront" src="/first-90-days/en/first30/team-integration/images/cloudfront-map.png" title="Cloudfront"></p>
-<p>When a user requests content that you serve with CloudFront, their request is routed to a nearby Edge Location. If CloudFront has a cached copy of the requested file, CloudFront delivers it to the user, providing a fast (low-latency) response. If the file they’ve requested isn’t yet cached, CloudFront retrieves it from your origin – for example, the S3 bucket where you’ve stored your content. Then, for the next local request for the same content, it’s already cached nearby and can be served immediately.</p>
-<p>By caching your content in Edge Locations, CloudFront reduces the load on your S3 bucket and helps ensure a faster response for your users when they request content.</p>
-<p>In the following illustration, you can see that there are no longer requests traversing the globe to get to our content hosted in an S3 bucket. Instead, requests are routed to the “least latent” Edge Location; that is, the closest in terms of delivery speed. CloudFront then serves cached content quickly and directly to the requesting user nearby, as shown with the green arrows. If the content is not yet cached with an edge server, CloudFront retrieves it from the S3 bucket origin. And because the content traverses the AWS private network instead of the public internet and CloudFront optimizes the TCP handshake, the request and content return is still much faster than access across the public internet.</p>
-<p><img alt="Cloudfront" src="/first-90-days/en/first30/team-integration/images/s3-and-cloudfront.jpg" title="Cloudfront"></p>
-<p>But how do we secure our content?</p>
+	<h3 id="team-integration-detailed-approach">Team Integration: Detailed Approach</h3>
+<p><img alt="Team Integratiom" src="/first-90-days/en/first30/team-integration/images/team-integration.png"></p>
+<h4 id="1-getting-to-know-the-engineering-and-architecture-teams">1. Getting to Know the Engineering and Architecture Teams</h4>
+<p><strong>Objective:</strong>
+To build strong relationships, understand team dynamics, and establish a foundation of trust and collaboration.</p>
+<p><strong>Steps:</strong></p>
+<p><strong>a. Initial Meetings and Introductions:</strong></p>
+<ul>
+<li><strong>Organize Team Meetings:</strong>
+<ul>
+<li>Schedule initial meetings with each team (engineering, architecture) to introduce yourself and outline your goals.</li>
+<li>Conduct one-on-one meetings with team members to understand their roles, responsibilities, and perspectives.</li>
+</ul>
+</li>
+<li><strong>Team Building Activities:</strong>
+<ul>
+<li>Plan team-building activities such as workshops, hackathons, or informal gatherings to foster camaraderie and teamwork.</li>
+</ul>
+</li>
+</ul>
+<p><strong>b. Understanding Team Dynamics:</strong></p>
+<ul>
+<li><strong>Observe Team Interactions:</strong>
+<ul>
+<li>Attend team meetings, stand-ups, and brainstorming sessions to observe how team members interact and collaborate.</li>
+</ul>
+</li>
+<li><strong>Identify Key Contributors:</strong>
+<ul>
+<li>Recognize individuals who are key contributors and influencers within the teams.</li>
+</ul>
+</li>
+</ul>
+<p><strong>c. Establishing Open Communication:</strong></p>
+<ul>
+<li><strong>Create Open Channels:</strong>
+<ul>
+<li>Set up regular check-ins, feedback sessions, and open office hours to encourage communication.</li>
+<li>Use collaboration tools such as Slack, Microsoft Teams, or Confluence to facilitate ongoing dialogue.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="2-identifying-skills-gaps">2. Identifying Skills Gaps</h4>
+<p><strong>Objective:</strong>
+To assess the current skill levels within the teams and identify areas for improvement or development.</p>
+<p><strong>Steps:</strong></p>
+<p><strong>a. Skills Inventory:</strong></p>
+<ul>
+<li><strong>Create a Skills Matrix:</strong>
+<ul>
+<li>Develop a skills matrix listing the key competencies required for the teams (e.g., coding languages, architectural principles, DevOps tools).</li>
+<li>Have team members self-assess their proficiency levels against these competencies.</li>
+</ul>
+</li>
+</ul>
+<p><strong>b. Team Feedback:</strong></p>
+<ul>
+<li><strong>Gather Feedback from Teams:</strong>
+<ul>
+<li>Gather feedback from team leads and peers. The <a href="/first-90-days/en/first30/team-integration/framework/">example framework</a> could be used to help frame &amp; structure these conversations.</li>
+<li>Identify any recurring themes or areas where team members have expressed a desire for growth.</li>
+</ul>
+</li>
+</ul>
+<p><strong>c. Gap Analysis:</strong></p>
+<ul>
+<li><strong>Analyze Skills Data:</strong>
+<ul>
+<li>Compare the skills matrix against the self assessments and feedback reviews to identify gaps.</li>
+<li>Highlight critical gaps that need immediate attention versus those that can be addressed over time.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="3-assessing-the-role-of-an-architect-in-the-teams">3. Assessing the Role of an Architect in the Teams</h4>
+<p><strong>Objective:</strong>
+To evaluate the current role of architects within the teams and ensure they are effectively contributing to the overall goals.</p>
+<p><strong>Steps:</strong></p>
+<p><strong>a. Role Clarification:</strong></p>
+<ul>
+<li><strong>Define Architect Responsibilities:</strong>
+<ul>
+<li>Clearly outline the responsibilities and expectations for architects, including technical leadership, mentoring, and design oversight.</li>
+</ul>
+</li>
+<li><strong>Align with Business Goals:</strong>
+<ul>
+<li>Ensure that the architect role is aligned with the organization’s strategic objectives and technology roadmap.</li>
+</ul>
+</li>
+</ul>
+<p><strong>b. Collaboration and Influence:</strong></p>
+<ul>
+<li><strong>Assess Collaboration:</strong>
+<ul>
+<li>Evaluate how architects collaborate with other team members, including developers, product managers, and operations.</li>
+</ul>
+</li>
+<li><strong>Measure Influence:</strong>
+<ul>
+<li>Determine the influence architects have on decision-making processes and their ability to drive architectural standards and best practices.</li>
+</ul>
+</li>
+</ul>
+<p><strong>c. Feedback and Improvement:</strong></p>
+<ul>
+<li><strong>Gather Feedback:</strong>
+<ul>
+<li>Solicit feedback from peers, team leads, and stakeholders about the architects’ performance and impact.</li>
+</ul>
+</li>
+<li><strong>Identify Improvement Areas:</strong>
+<ul>
+<li>Identify areas where architects can improve, such as communication skills, consistency across teams, technical knowledge, or leadership capabilities.</li>
+</ul>
+</li>
+</ul>
+<hr>
 
 
 
@@ -874,8 +1073,29 @@
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -885,8 +1105,20 @@
             
                 
                     
+                
+                
+
+                    
+                    
                         
+                    
+                    
+
+                    
                         
+            
+            
+                
                     
                 
                 
@@ -895,6 +1127,9 @@
                     
                     
 
+                    
+            
+        
                     
             
         
@@ -1128,7 +1363,7 @@
 			<a class="nav nav-prev" href="/first-90-days/en/first30/current-state/sample-report/" title="Example Report"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/first-90-days/en/first30/quick-wins/" title="Quick Wins" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/first-90-days/en/first30/team-integration/framework/" title="Example Framework" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1138,19 +1373,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/first-90-days/js/clipboard.min.js?1718577569"></script>
-    <script src="/first-90-days/js/perfect-scrollbar.min.js?1718577569"></script>
-    <script src="/first-90-days/js/perfect-scrollbar.jquery.min.js?1718577569"></script>
-    <script src="/first-90-days/js/jquery.sticky.js?1718577569"></script>
-    <script src="/first-90-days/js/featherlight.min.js?1718577569"></script>
-    <script src="/first-90-days/js/highlight.pack.js?1718577569"></script>
+    <script src="/first-90-days/js/clipboard.min.js?1718622863"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.min.js?1718622863"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.jquery.min.js?1718622863"></script>
+    <script src="/first-90-days/js/jquery.sticky.js?1718622863"></script>
+    <script src="/first-90-days/js/featherlight.min.js?1718622863"></script>
+    <script src="/first-90-days/js/highlight.pack.js?1718622863"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/first-90-days/js/modernizr.custom-3.6.0.js?1718577569"></script>
-    <script src="/first-90-days/js/learn.js?1718577569"></script>
-    <script src="/first-90-days/js/hugo-learn.js?1718577569"></script>
+    <script src="/first-90-days/js/modernizr.custom-3.6.0.js?1718622863"></script>
+    <script src="/first-90-days/js/learn.js?1718622863"></script>
+    <script src="/first-90-days/js/hugo-learn.js?1718622863"></script>
     
         
-            <script src="/first-90-days/mermaid/mermaid.js?1718577569"></script>
+            <script src="/first-90-days/mermaid/mermaid.js?1718622863"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

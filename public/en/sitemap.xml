@@ -4,6 +4,8 @@
   <url>
     <loc>http://localhost:1313/first-90-days/en/first30/current-state/</loc>
   </url><url>
+    <loc>http://localhost:1313/first-90-days/en/first30/current-state/sample-report/</loc>
+  </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/processes/</loc>

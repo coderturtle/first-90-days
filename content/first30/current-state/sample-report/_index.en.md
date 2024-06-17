@@ -2,6 +2,7 @@
 title: Example Report
 weight: 5
 chapter: false
+pre: '<b>i. </b>'
 ---
 
 ## Executive Summary
