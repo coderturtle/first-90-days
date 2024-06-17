@@ -43,6 +43,8 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
@@ -63,6 +65,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+      
 
   # Deployment job
   deploy:

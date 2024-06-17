@@ -7,6 +7,8 @@ chapter: false
 
 ### Setting Up an Architecture Center of Excellence (CoE) Operating Model in Gremlins Inc.: Centralized Control with Decentralized Execution
 
+![CoE](images/coe.png)
+
 **Objective:**
 
 To establish an Architecture Center of Excellence (CoE) at Gremlins Inc. that provides centralized control over architectural standards and governance while enabling decentralized execution by various teams to foster innovation and agility.

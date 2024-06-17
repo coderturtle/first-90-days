@@ -22,8 +22,6 @@ defaultContentLanguageInSubdir= true
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
-ignoreLogs = ['error-remote-getjson']
-
 [Languages]
 [Languages.en]
 title = "Head of Architecture First 90 Days"

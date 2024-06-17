@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/first-90-days/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=first-90-days/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="description" content="Example of first 90 days reviewing an architecture thene">
+<meta name="author" content="Derm Duncan">
+
+    <link rel="icon" href="/first-90-days/images/favicon.png" type="image/png">
+
+    <title>Example - Consistency &amp; Efficiency :: Head of Architecture First 90 Days</title>
+
+    
+    <link href="/first-90-days/css/nucleus.css?1718651984" rel="stylesheet">
+    <link href="/first-90-days/css/fontawesome-all.min.css?1718651984" rel="stylesheet">
+    <link href="/first-90-days/css/hybrid.css?1718651984" rel="stylesheet">
+    <link href="/first-90-days/css/featherlight.min.css?1718651984" rel="stylesheet">
+    <link href="/first-90-days/css/perfect-scrollbar.min.css?1718651984" rel="stylesheet">
+    <link href="/first-90-days/css/auto-complete.css?1718651984" rel="stylesheet">
+    <link href="/first-90-days/css/atom-one-dark-reasonable.css?1718651984" rel="stylesheet">
+    <link href="/first-90-days/css/theme.css?1718651984" rel="stylesheet">
+    <link href="/first-90-days/css/hugo-theme.css?1718651984" rel="stylesheet">
+    
+    <link href="/first-90-days/css/theme-blue.css?1718651984" rel="stylesheet">
+    
+    
+
+    <script src="/first-90-days/js/jquery-3.3.1.min.js?1718651984"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/first-90-days/en/60to90/processes/gremlins/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+  <img src="images/cloud-gremlin-blue.png" />
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/first-90-days/js/lunr.min.js?1718651984"></script>
+<script type="text/javascript" src="/first-90-days/js/auto-complete.js?1718651984"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/first-90-days\/";
+    
+</script>
+<script type="text/javascript" src="/first-90-days/js/search.js?1718651984"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/" title="First 30 Days" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/">
+          <b>1. </b>First 30 Days
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/current-state/" title="Current State" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/current-state/">
+          <b>a. </b>Current State
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/current-state/sample-report/" title="Example Report" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/current-state/sample-report/">
+          <b>i. </b>Example Report
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/team-integration/" title="Team Integration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/team-integration/">
+          <b>b. </b>Team Integration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/team-integration/framework/" title="Example Framework" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/team-integration/framework/">
+          <b>i. </b>Example Framework
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/quick-wins/" title="Quick Wins" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/quick-wins/">
+          <b>c. </b>Quick Wins
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/quick-wins/local-dev-env/" title="Example Local Dev Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/quick-wins/local-dev-env/">
+          <b>i. </b>Example Local Dev Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/" title="Days 30 - 60" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/">
+          <b>2. </b>Days 30 - 60
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/strategic-plan/" title="Strategic Plan" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/strategic-plan/">
+          <b>a. </b>Strategic Plan
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/strategic-plan/example-plan/" title="Example - Gremlins Inc" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/strategic-plan/example-plan/">
+          <b>i. </b>Example - Gremlins Inc
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/team-integration/" title="Team Integration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/team-integration/">
+          <b>b. </b>Team Integration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/team-integration/coe/" title="Example - CoE Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/team-integration/coe/">
+          <b>i. </b>Example - CoE Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/quick-wins/" title="Quick Wins" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/quick-wins/">
+          <b>c. </b>Quick Wins
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/quick-wins/swe-agent/" title="Example - Rapid Prototyping" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/quick-wins/swe-agent/">
+          <b>i. </b>Example - Rapid Prototyping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/" title="Days 60 - 90" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/">
+          <b>3. </b>Days 60 - 90
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/processes/" title="Review Processes" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/processes/">
+          <b>a. </b>Review Processes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/processes/gremlins/" title="Example - Consistency &amp; Efficiency" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="/first-90-days/en/60to90/processes/gremlins/">
+          <b>i. </b>Example - Consistency &amp; Efficiency
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/innovation/" title="Drive Innovation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/innovation/">
+          <b>b. </b>Drive Innovation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/innovation/techradar/" title="Example - Tech Radar" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/innovation/techradar/">
+          <b>i. </b>Example - Tech Radar
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/collaboration/" title="Foster Collaboration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/collaboration/">
+          <b>c. </b>Foster Collaboration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/" title="Vision" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/">
+          <b>b. </b>Vision
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/" title="Summary &amp; Conclusions" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/">
+          <b>4. </b>Summary &amp; Conclusions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/overview/" title="Solution Overview" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/overview/">
+          <b>a. </b>Solution Overview
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/details/" title="Solution Details" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/details/">
+          <b>b. </b>Solution Details
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/deploy/" title="Deploy Stack" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/deploy/">
+          <b>c. </b>Deploy Stack
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/coderturtle/first-90-days"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://coderturtle.githubpages.io/first-90-days"><i class='fas fa-fw fa-camera'></i> Showcases</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://gohugo.io/"><i class='fas fa-fw fa-bookmark'></i> Hugo Documentation</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download matcornic/hugo-theme-learn on GitHub">Download</a>
+
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn" data-icon="octicon-star" data-show-count="true" aria-label="Star matcornic/hugo-theme-learn on GitHub">Star</a>
+
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork matcornic/hugo-theme-learn on GitHub">Fork</a>
+
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/coderturtle/first-90-days60to90/processes/gremlins/_index.en.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/first-90-days/en/'>Head of Architecture - First 90 Days</a> > <a href='/first-90-days/en/60to90/'>Days 60 - 90</a> > <a href='/first-90-days/en/60to90/processes/'>Review Processes</a> > Example - Consistency & Efficiency
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#sample-process-review-and-refinement-for-gremlins-inc">Sample Process Review and Refinement for Gremlins Inc.</a></li>
+        <li><a href="#1-conduct-a-comprehensive-review">1. Conduct a Comprehensive Review</a></li>
+        <li><a href="#2-identify-areas-for-improvement">2. Identify Areas for Improvement</a></li>
+        <li><a href="#3-redesign-workflows">3. Redesign Workflows</a></li>
+        <li><a href="#4-introduce-or-refine-metrics-and-kpis">4. Introduce or Refine Metrics and KPIs</a></li>
+        <li><a href="#5-establish-a-continuous-improvement-framework">5. Establish a Continuous Improvement Framework</a></li>
+        <li><a href="#implementation-and-monitoring">Implementation and Monitoring</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Example - Consistency &amp; Efficiency
+            </h1>
+          
+
+        
+
+
+
+	<h3 id="sample-process-review-and-refinement-for-gremlins-inc">Sample Process Review and Refinement for Gremlins Inc.</h3>
+<p><strong>Objective:</strong></p>
+<p>To ensure consistency across teams and identify efficiency improvements within the processes at Gremlins Inc.</p>
+<h3 id="1-conduct-a-comprehensive-review">1. Conduct a Comprehensive Review</h3>
+<h4 id="a-gather-information">a. Gather Information</h4>
+<p><strong>Stakeholder Interviews:</strong></p>
+<ul>
+<li>Conduct interviews with team members, project managers, and stakeholders to gather insights into current workflows and processes.</li>
+<li>Questions to ask:
+<ul>
+<li>What are the most time-consuming tasks in your workflow?</li>
+<li>Where do you see the most frequent delays or bottlenecks?</li>
+<li>What tools and processes are you currently using?</li>
+</ul>
+</li>
+</ul>
+<p><strong>Process Mapping:</strong></p>
+<ul>
+<li>Create detailed process maps of existing workflows to visualize the current state and identify bottlenecks or inefficiencies.</li>
+<li>Example tools: Lucidchart, Miro.</li>
+</ul>
+<h4 id="b-analyze-data">b. Analyze Data</h4>
+<p><strong>Performance Metrics:</strong></p>
+<ul>
+<li>Review existing performance metrics and historical data to identify trends and areas for improvement.</li>
+<li>Metrics to consider:
+<ul>
+<li>Average time to complete tasks.</li>
+<li>Frequency of errors or defects.</li>
+<li>Utilization rates of tools and resources.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Feedback Analysis:</strong></p>
+<ul>
+<li>Analyze feedback from team members and stakeholders to pinpoint specific pain points and inefficiencies in current processes.</li>
+</ul>
+<h3 id="2-identify-areas-for-improvement">2. Identify Areas for Improvement</h3>
+<h4 id="a-bottleneck-identification">a. Bottleneck Identification</h4>
+<p><strong>Critical Path Analysis:</strong></p>
+<ul>
+<li>Identify bottlenecks and delays in the current workflows that hinder productivity.</li>
+<li>Use tools like Microsoft Project or Asana to map out critical paths and dependencies.</li>
+</ul>
+<p><strong>Root Cause Analysis:</strong></p>
+<ul>
+<li>Perform root cause analysis to understand the underlying issues causing these bottlenecks.</li>
+<li>Techniques: Fishbone diagram, 5 Whys.</li>
+</ul>
+<h4 id="b-benchmarking">b. Benchmarking</h4>
+<p><strong>Industry Best Practices:</strong></p>
+<ul>
+<li>Research industry best practices and benchmarks to identify potential improvements that can be applied to the architecture team’s processes.</li>
+<li>Sources: Industry reports, case studies, expert consultations.</li>
+</ul>
+<p><strong>Internal Comparison:</strong></p>
+<ul>
+<li>Compare the performance of different teams or projects within the organization to identify best practices already in use.</li>
+</ul>
+<h3 id="3-redesign-workflows">3. Redesign Workflows</h3>
+<h4 id="a-process-optimization">a. Process Optimization</h4>
+<p><strong>Lean Principles:</strong></p>
+<ul>
+<li>Apply Lean principles to eliminate waste and streamline workflows.</li>
+<li>Examples:
+<ul>
+<li>Reduce handoffs between teams.</li>
+<li>Simplify approval processes.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Automation:</strong></p>
+<ul>
+<li>Identify opportunities to automate repetitive tasks and processes to improve efficiency.</li>
+<li>Tools: Jenkins for CI/CD, Ansible for configuration management.</li>
+</ul>
+<h4 id="b-workflow-redesign">b. Workflow Redesign</h4>
+<p><strong>Standardization:</strong></p>
+<ul>
+<li>Standardize processes across teams to ensure consistency and reduce variability.</li>
+<li>Develop SOPs (Standard Operating Procedures) for key processes.</li>
+</ul>
+<p><strong>Agile Methodologies:</strong></p>
+<ul>
+<li>Incorporate Agile methodologies such as Scrum or Kanban to enhance flexibility and responsiveness.</li>
+<li>Tools: Jira, Trello.</li>
+</ul>
+<h3 id="4-introduce-or-refine-metrics-and-kpis">4. Introduce or Refine Metrics and KPIs</h3>
+<h4 id="a-define-relevant-kpis">a. Define Relevant KPIs</h4>
+<p><strong>Performance Metrics:</strong></p>
+<ul>
+<li>Define Key Performance Indicators (KPIs) that align with the organization’s strategic goals and provide measurable outcomes for the architecture team.</li>
+<li>Examples:
+<ul>
+<li>Code quality (defect density).</li>
+<li>System performance (response time).</li>
+<li>Deployment frequency.</li>
+<li>Team productivity (velocity).</li>
+</ul>
+</li>
+</ul>
+<h4 id="b-implement-monitoring-tools">b. Implement Monitoring Tools</h4>
+<p><strong>Dashboards:</strong></p>
+<ul>
+<li>Set up dashboards using tools like Grafana or Power BI to visualize KPIs and track progress in real-time.</li>
+</ul>
+<p><strong>Automated Reporting:</strong></p>
+<ul>
+<li>Implement automated reporting systems to regularly update stakeholders on performance metrics and KPIs.</li>
+</ul>
+<h3 id="5-establish-a-continuous-improvement-framework">5. Establish a Continuous Improvement Framework</h3>
+<h4 id="a-regular-reviews">a. Regular Reviews</h4>
+<p><strong>Retrospectives:</strong></p>
+<ul>
+<li>Conduct regular retrospectives to review what’s working well and what needs improvement.</li>
+<li>Format: Structured meetings with clear action items.</li>
+</ul>
+<p><strong>Feedback Sessions:</strong></p>
+<ul>
+<li>Hold feedback sessions with team members to gather input on the effectiveness of new workflows and processes.</li>
+</ul>
+<h4 id="b-iterative-refinement">b. Iterative Refinement</h4>
+<p><strong>Plan-Do-Check-Act (PDCA) Cycle:</strong></p>
+<ul>
+<li>Implement the PDCA cycle for continuous improvement. Plan changes, implement them (Do), check the results, and act on findings to refine the process further.</li>
+</ul>
+<h3 id="implementation-and-monitoring">Implementation and Monitoring</h3>
+<h4 id="a-implementation-plan">a. Implementation Plan</h4>
+<p><strong>Phased Rollout:</strong></p>
+<ul>
+<li>Roll out process improvements in phases to manage change effectively and minimize disruption.</li>
+</ul>
+<p><strong>Training:</strong></p>
+<ul>
+<li>Provide training to team members on new workflows and tools to ensure smooth adoption.</li>
+</ul>
+<h4 id="b-monitor-and-adjust">b. Monitor and Adjust</h4>
+<p><strong>Performance Tracking:</strong></p>
+<ul>
+<li>Continuously monitor performance metrics and KPIs to track the impact of process improvements.</li>
+</ul>
+<p><strong>Adjustments:</strong></p>
+<ul>
+<li>Make necessary adjustments based on ongoing feedback and performance data to ensure continuous optimization.</li>
+</ul>
+<h3 id="conclusion">Conclusion</h3>
+<p>By conducting a comprehensive review and refinement of workflows and processes, Gremlins Inc. can ensure consistency across teams and identify efficiency improvements. Implementing best practices and continuous improvement frameworks will drive optimal performance and alignment with organizational goals. This structured approach will enhance team productivity and overall efficiency.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/first-90-days/en/60to90/processes/" title="Review Processes"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/first-90-days/en/60to90/innovation/" title="Drive Innovation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/first-90-days/js/clipboard.min.js?1718651984"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.min.js?1718651984"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.jquery.min.js?1718651984"></script>
+    <script src="/first-90-days/js/jquery.sticky.js?1718651984"></script>
+    <script src="/first-90-days/js/featherlight.min.js?1718651984"></script>
+    <script src="/first-90-days/js/highlight.pack.js?1718651984"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/first-90-days/js/modernizr.custom-3.6.0.js?1718651984"></script>
+    <script src="/first-90-days/js/learn.js?1718651984"></script>
+    <script src="/first-90-days/js/hugo-learn.js?1718651984"></script>
+    
+        
+            <script src="/first-90-days/mermaid/mermaid.js?1718651984"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105947713-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

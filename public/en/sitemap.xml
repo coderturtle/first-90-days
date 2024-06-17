@@ -4,6 +4,16 @@
   <url>
     <loc>http://localhost:1313/first-90-days/en/first30/current-state/</loc>
   </url><url>
+    <loc>http://localhost:1313/first-90-days/en/30to60/team-integration/coe/</loc>
+  </url><url>
+    <loc>http://localhost:1313/first-90-days/en/60to90/processes/gremlins/</loc>
+  </url><url>
+    <loc>http://localhost:1313/first-90-days/en/30to60/strategic-plan/example-plan/</loc>
+  </url><url>
+    <loc>http://localhost:1313/first-90-days/en/30to60/quick-wins/swe-agent/</loc>
+  </url><url>
+    <loc>http://localhost:1313/first-90-days/en/60to90/innovation/techradar/</loc>
+  </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/quick-wins/local-dev-env/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/current-state/sample-report/</loc>

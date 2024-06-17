@@ -5,9 +5,9 @@ pre: '<b>b. </b>'
 chapter: false
 ---
 
-![CoE](images/coe.png)
-
 ### Team Integration Approach for Days 30-60: Driving Consistency and Efficiency Across Teams
+
+![Team Integration](images/team.png)
 
 **Objective:**
 
