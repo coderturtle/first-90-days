@@ -4,6 +4,8 @@
   <url>
     <loc>http://localhost:1313/first-90-days/en/first30/current-state/</loc>
   </url><url>
+    <loc>http://localhost:1313/first-90-days/en/first30/quick-wins/local-dev-env/</loc>
+  </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/current-state/sample-report/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/</loc>
@@ -17,6 +19,8 @@
     <loc>http://localhost:1313/first-90-days/en/30to60/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/innovation/</loc>
+  </url><url>
+    <loc>http://localhost:1313/first-90-days/en/first30/team-integration/framework/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/conclusion/details/</loc>
   </url><url>

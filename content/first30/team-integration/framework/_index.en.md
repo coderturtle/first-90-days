@@ -9,8 +9,8 @@ chapter: false
 
 #### Framework to Measure the Effectiveness of the Architect Role
 
-
 **Objective:**
+
 To implement a framework that measures the effectiveness of architects in achieving their goals and contributing to the team’s success.
 
 **Framework:**

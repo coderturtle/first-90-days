@@ -39,6 +39,7 @@ To build strong relationships, understand team dynamics, and establish a foundat
 #### 2. Identifying Skills Gaps
 
 **Objective:**
+
 To assess the current skill levels within the teams and identify areas for improvement or development.
 
 **Steps:**

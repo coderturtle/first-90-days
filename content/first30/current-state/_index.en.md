@@ -12,6 +12,7 @@ chapter: false
 ## 1. Initial Stakeholder Meetings and Interviews
 
 **Objective:**  
+
 Gather high-level information about the current system, pain points, and business requirements.
 
 **Steps:**

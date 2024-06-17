@@ -10,6 +10,7 @@ chapter: false
 ### Improving Local Development Environment Setup: Leveraging Automation and Containers
 
 **Objective:**
+
 To streamline the process of setting up a local development environment, making it quick, consistent, and easy for new developers to get started.
 
 ### Steps to Implement One-Click Local Development Environment Setup

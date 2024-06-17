@@ -10,6 +10,7 @@ chapter: false
 ### Identifying Opportunities for Quick Wins in the First 30 Days
 
 **Objective:**
+
 To build credibility and momentum by achieving immediate improvements that have a noticeable impact on the team's efficiency, productivity, and morale.
 
 ### Areas to Focus on for Quick Wins
