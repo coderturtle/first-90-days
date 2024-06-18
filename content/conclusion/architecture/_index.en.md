@@ -1,5 +1,5 @@
 ---
-title: What makes good Architecture
+title: Software Architecture
 weight: 10
 pre: '<b>Appendix II. </b>'
 chapter: false

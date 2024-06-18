@@ -1,5 +1,5 @@
 ---
-title: Role of Architect
+title: Architect Impact
 weight: 5
 pre: '<b>Appendix I. </b>'
 chapter: false

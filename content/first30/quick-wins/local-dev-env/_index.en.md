@@ -11,7 +11,7 @@ chapter: false
 
 **Objective:**
 
-To streamline the process of setting up a local development environment, making it quick, consistent, and easy for new developers to get started.
+To streamline the process of setting up a local development environment, making it quick, consistent, and easy for new developers to get started at Gremlins Inc.
 
 ### Steps to Implement One-Click Local Development Environment Setup
 
