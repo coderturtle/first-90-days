@@ -1,0 +1,2501 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/first-90-days/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=first-90-days/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="description" content="Example of first 90 days reviewing an architecture thene">
+<meta name="author" content="Derm Duncan">
+
+    <link rel="icon" href="/first-90-days/images/favicon.png" type="image/png">
+
+    <title>Phase 4 :: Head of Architecture First 90 Days</title>
+
+    
+    <link href="/first-90-days/css/nucleus.css?1718709980" rel="stylesheet">
+    <link href="/first-90-days/css/fontawesome-all.min.css?1718709980" rel="stylesheet">
+    <link href="/first-90-days/css/hybrid.css?1718709980" rel="stylesheet">
+    <link href="/first-90-days/css/featherlight.min.css?1718709980" rel="stylesheet">
+    <link href="/first-90-days/css/perfect-scrollbar.min.css?1718709980" rel="stylesheet">
+    <link href="/first-90-days/css/auto-complete.css?1718709980" rel="stylesheet">
+    <link href="/first-90-days/css/atom-one-dark-reasonable.css?1718709980" rel="stylesheet">
+    <link href="/first-90-days/css/theme.css?1718709980" rel="stylesheet">
+    <link href="/first-90-days/css/hugo-theme.css?1718709980" rel="stylesheet">
+    
+    <link href="/first-90-days/css/theme-blue.css?1718709980" rel="stylesheet">
+    
+    
+
+    <script src="/first-90-days/js/jquery-3.3.1.min.js?1718709980"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/first-90-days/en/60to90/vision/gremlin-roadmap/phase4/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+  <img src="images/cloud-gremlin-blue.png" />
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/first-90-days/js/lunr.min.js?1718709980"></script>
+<script type="text/javascript" src="/first-90-days/js/auto-complete.js?1718709980"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/first-90-days\/";
+    
+</script>
+<script type="text/javascript" src="/first-90-days/js/search.js?1718709980"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/" title="First 30 Days" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/">
+          <b>1. </b>First 30 Days
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/current-state/" title="Current State" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/current-state/">
+          <b>a. </b>Current State
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/current-state/sample-report/" title="Example Report" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/current-state/sample-report/">
+          <b>i. </b>Example Report
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/team-integration/" title="Team Integration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/team-integration/">
+          <b>b. </b>Team Integration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/team-integration/framework/" title="Example Framework" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/team-integration/framework/">
+          <b>i. </b>Example Framework
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/quick-wins/" title="Quick Wins" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/quick-wins/">
+          <b>c. </b>Quick Wins
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/quick-wins/local-dev-env/" title="Example Local Dev Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/quick-wins/local-dev-env/">
+          <b>i. </b>Example Local Dev Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/" title="Days 30 - 60" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/">
+          <b>2. </b>Days 30 - 60
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/strategic-plan/" title="Strategic Plan" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/strategic-plan/">
+          <b>a. </b>Strategic Plan
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/strategic-plan/example-plan/" title="Example - Gremlins Inc" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/strategic-plan/example-plan/">
+          <b>i. </b>Example - Gremlins Inc
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/team-integration/" title="Team Integration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/team-integration/">
+          <b>b. </b>Team Integration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/team-integration/coe/" title="Example - CoE Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/team-integration/coe/">
+          <b>i. </b>Example - CoE Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/quick-wins/" title="Quick Wins" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/quick-wins/">
+          <b>c. </b>Quick Wins
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/quick-wins/swe-agent/" title="Example - Rapid Prototyping" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/quick-wins/swe-agent/">
+          <b>i. </b>Example - Rapid Prototyping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/" title="Days 60 - 90" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/">
+          <b>3. </b>Days 60 - 90
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/processes/" title="Review Processes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/processes/">
+          <b>a. </b>Review Processes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/processes/gremlins/" title="Example - Consistency &amp; Efficiency" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/processes/gremlins/">
+          <b>i. </b>Example - Consistency &amp; Efficiency
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/innovation/" title="Drive Innovation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/innovation/">
+          <b>b. </b>Drive Innovation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/innovation/techradar/" title="Example - Tech Radar" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/innovation/techradar/">
+          <b>i. </b>Example - Tech Radar
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/collaboration/" title="Foster Collaboration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/collaboration/">
+          <b>c. </b>Foster Collaboration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/collaboration/example-collab-model/" title="Collaboration at Gremlins" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/collaboration/example-collab-model/">
+          <b>i. </b>Collaboration at Gremlins
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/" title="Vision" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/">
+          <b>b. </b>Vision
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/gremlin-roadmap/" title="Gremlins Inc Roadmap" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/gremlin-roadmap/">
+          <b>i. </b>Gremlins Inc Roadmap
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/gremlin-roadmap/phase1/" title="Phase 1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/gremlin-roadmap/phase1/">
+          <b>1. </b>Phase 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/gremlin-roadmap/phase2/" title="Phase 2" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/gremlin-roadmap/phase2/">
+          <b>2. </b>Phase 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/gremlin-roadmap/phase3/" title="Phase 3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/gremlin-roadmap/phase3/">
+          <b>3. </b>Phase 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/gremlin-roadmap/phase4/" title="Phase 4" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/gremlin-roadmap/phase4/">
+          <b>4. </b>Phase 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/gremlin-roadmap/phase5/" title="Phase 5" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/gremlin-roadmap/phase5/">
+          <b>5. </b>Phase 5
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/" title="Summary &amp; Appendix" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/">
+          <b>4. </b>Summary &amp; Appendix
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/architect/" title="Role of Architect" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/architect/">
+          <b>Appendix I. </b>Role of Architect
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/architecture/" title="What makes good Architecture" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/architecture/">
+          <b>Appendix II. </b>What makes good Architecture
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/progress-report/" title="Progress Reports" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/progress-report/">
+          <b>Appendix III. </b>Progress Reports
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/coderturtle/first-90-days"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://coderturtle.githubpages.io/first-90-days"><i class='fas fa-fw fa-camera'></i> Showcases</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://gohugo.io/"><i class='fas fa-fw fa-bookmark'></i> Hugo Documentation</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download matcornic/hugo-theme-learn on GitHub">Download</a>
+
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn" data-icon="octicon-star" data-show-count="true" aria-label="Star matcornic/hugo-theme-learn on GitHub">Star</a>
+
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork matcornic/hugo-theme-learn on GitHub">Fork</a>
+
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/coderturtle/first-90-days60to90/vision/gremlin-roadmap/phase4/_index.en.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/first-90-days/en/'>Head of Architecture - First 90 Days</a> > <a href='/first-90-days/en/60to90/'>Days 60 - 90</a> > <a href='/first-90-days/en/60to90/vision/'>Vision</a> > <a href='/first-90-days/en/60to90/vision/gremlin-roadmap/'>Gremlins Inc Roadmap</a> > Phase 4
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#detailed-roadmap-development-month-7-9">Detailed Roadmap Development (Month 7-9)</a></li>
+        <li><a href="#detailed-roadmap-phases-and-milestones">Detailed Roadmap Phases and Milestones</a></li>
+        <li><a href="#resource-allocation-plan">Resource Allocation Plan</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Phase 4
+            </h1>
+          
+
+        
+
+
+
+	<h3 id="detailed-roadmap-development-month-7-9">Detailed Roadmap Development (Month 7-9)</h3>
+<p><strong>Activities:</strong></p>
+<ul>
+<li><strong>Break Down Roadmap into Phases</strong></li>
+<li><strong>Resource Planning</strong></li>
+<li><strong>Capacity Planning</strong></li>
+<li><strong>Risk Management</strong></li>
+</ul>
+<p><strong>Milestones:</strong></p>
+<ul>
+<li>Detailed Phases and Milestones</li>
+<li>Resource Allocation Plan</li>
+</ul>
+<hr>
+<h3 id="detailed-roadmap-phases-and-milestones">Detailed Roadmap Phases and Milestones</h3>
+<p><strong>Objective:</strong></p>
+<p>To adopt GitOps, migrate architecture diagrams to the C4 model using Structurizr, convert static architecture documentation to dynamic reference architecture examples, and embrace tech radar and maturity models to manage the tech landscape.</p>
+<h4 id="phase-1-preparation-and-assessment-month-1-2">Phase 1: Preparation and Assessment (Month 1-2)</h4>
+<p><strong>Key Activities:</strong></p>
+<ul>
+<li>Stakeholder alignment and buy-in.</li>
+<li>Conduct comprehensive assessments of current deployment processes, architecture documentation, and tech landscape.</li>
+<li>Identify key gaps and areas for improvement.</li>
+</ul>
+<p><strong>Milestones:</strong></p>
+<ul>
+<li><strong>Stakeholder Meetings:</strong>
+<ul>
+<li>Complete initial stakeholder meetings.</li>
+</ul>
+</li>
+<li><strong>Assessment Reports:</strong>
+<ul>
+<li>Deliver reports on current state assessments for deployment processes and architecture documentation.</li>
+</ul>
+</li>
+<li><strong>Gap Analysis:</strong>
+<ul>
+<li>Identify and document key gaps and areas for improvement.</li>
+</ul>
+</li>
+</ul>
+<h4 id="phase-2-strategy-development-month-3-4">Phase 2: Strategy Development (Month 3-4)</h4>
+<p><strong>Key Activities:</strong></p>
+<ul>
+<li>Develop a GitOps adoption strategy.</li>
+<li>Define the transition plan for migrating architecture diagrams to the C4 model using Structurizr.</li>
+<li>Outline the approach for converting static documentation to dynamic reference architecture examples.</li>
+<li>Create a tech radar and maturity model.</li>
+</ul>
+<p><strong>Milestones:</strong></p>
+<ul>
+<li><strong>GitOps Strategy:</strong>
+<ul>
+<li>Document GitOps principles and workflow.</li>
+</ul>
+</li>
+<li><strong>C4 Model Transition Plan:</strong>
+<ul>
+<li>Develop and approve the transition plan for architecture diagrams.</li>
+</ul>
+</li>
+<li><strong>Dynamic Documentation Strategy:</strong>
+<ul>
+<li>Outline the strategy for dynamic reference architecture examples.</li>
+</ul>
+</li>
+<li><strong>Tech Radar and Maturity Model:</strong>
+<ul>
+<li>Develop and publish the initial tech radar and maturity model.</li>
+</ul>
+</li>
+</ul>
+<h4 id="phase-3-tool-and-process-standardization-month-5-6">Phase 3: Tool and Process Standardization (Month 5-6)</h4>
+<p><strong>Key Activities:</strong></p>
+<ul>
+<li>Standardize GitOps tools and practices.</li>
+<li>Begin migration of architecture diagrams to the C4 model using Structurizr.</li>
+<li>Implement initial dynamic reference architecture examples.</li>
+<li>Establish unified CI/CD pipelines.</li>
+</ul>
+<p><strong>Milestones:</strong></p>
+<ul>
+<li><strong>GitOps Tools and Practices:</strong>
+<ul>
+<li>Complete selection and standardization of GitOps tools.</li>
+</ul>
+</li>
+<li><strong>Initial C4 Migration:</strong>
+<ul>
+<li>Migrate initial set of architecture diagrams to the C4 model.</li>
+</ul>
+</li>
+<li><strong>Dynamic Documentation Implementation:</strong>
+<ul>
+<li>Implement initial dynamic reference architecture examples.</li>
+</ul>
+</li>
+<li><strong>CI/CD Pipeline Implementation:</strong>
+<ul>
+<li>Implement CI/CD pipelines across initial projects.</li>
+</ul>
+</li>
+</ul>
+<h4 id="phase-4-pilot-projects-and-training-month-7-8">Phase 4: Pilot Projects and Training (Month 7-8)</h4>
+<p><strong>Key Activities:</strong></p>
+<ul>
+<li>Execute pilot projects to test GitOps, C4 model, and dynamic documentation.</li>
+<li>Conduct training sessions for teams on new tools and practices.</li>
+<li>Gather feedback and refine processes.</li>
+</ul>
+<p><strong>Milestones:</strong></p>
+<ul>
+<li><strong>Pilot Project Execution:</strong>
+<ul>
+<li>Complete pilot projects and document outcomes.</li>
+</ul>
+</li>
+<li><strong>Training Sessions:</strong>
+<ul>
+<li>Conduct comprehensive training sessions for teams.</li>
+</ul>
+</li>
+<li><strong>Feedback Collection:</strong>
+<ul>
+<li>Gather and analyze feedback from pilot projects and training.</li>
+</ul>
+</li>
+</ul>
+<h4 id="phase-5-rollout-and-documentation-month-9-12">Phase 5: Rollout and Documentation (Month 9-12)</h4>
+<p><strong>Key Activities:</strong></p>
+<ul>
+<li>Gradually roll out GitOps, C4 model, and dynamic documentation across all projects.</li>
+<li>Create and maintain comprehensive documentation for new processes and tools.</li>
+<li>Provide ongoing support and troubleshooting.</li>
+</ul>
+<p><strong>Milestones:</strong></p>
+<ul>
+<li><strong>Standardization Rollout:</strong>
+<ul>
+<li>Implement GitOps, C4 model, and dynamic documentation across all projects.</li>
+</ul>
+</li>
+<li><strong>Documentation:</strong>
+<ul>
+<li>Complete and publish comprehensive documentation.</li>
+</ul>
+</li>
+<li><strong>Ongoing Support:</strong>
+<ul>
+<li>Establish support channels for continuous assistance.</li>
+</ul>
+</li>
+</ul>
+<h4 id="phase-6-continuous-improvement-and-optimization-ongoing">Phase 6: Continuous Improvement and Optimization (Ongoing)</h4>
+<p><strong>Key Activities:</strong></p>
+<ul>
+<li>Monitor and track performance metrics.</li>
+<li>Regularly review and refine processes.</li>
+<li>Foster a culture of continuous improvement and innovation.</li>
+</ul>
+<p><strong>Milestones:</strong></p>
+<ul>
+<li><strong>Performance Metrics:</strong>
+<ul>
+<li>Implement and monitor key performance metrics.</li>
+</ul>
+</li>
+<li><strong>Regular Reviews:</strong>
+<ul>
+<li>Conduct regular process and performance reviews.</li>
+</ul>
+</li>
+<li><strong>Improvement Initiatives:</strong>
+<ul>
+<li>Launch continuous improvement initiatives based on feedback and metrics.</li>
+</ul>
+</li>
+</ul>
+<h4 id="summary-of-roadmap-phases-and-milestones">Summary of Roadmap Phases and Milestones</h4>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Key Activities</th>
+<th>Milestones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Preparation and Assessment</strong> (Month 1-2)</td>
+<td>Stakeholder alignment, comprehensive assessments, gap analysis</td>
+<td>Stakeholder meetings, assessment reports, gap analysis</td>
+</tr>
+<tr>
+<td><strong>Strategy Development</strong> (Month 3-4)</td>
+<td>Develop GitOps strategy, C4 model transition plan, dynamic documentation strategy, tech radar, and maturity model</td>
+<td>Documented GitOps strategy, approved C4 transition plan, outlined dynamic documentation strategy, published tech radar and maturity model</td>
+</tr>
+<tr>
+<td><strong>Tool and Process Standardization</strong> (Month 5-6)</td>
+<td>Standardize GitOps tools and practices, begin C4 migration, implement dynamic documentation, establish CI/CD pipelines</td>
+<td>Completed GitOps tools and practices standardization, initial C4 migration, implemented dynamic documentation, CI/CD pipeline implementation</td>
+</tr>
+<tr>
+<td><strong>Pilot Projects and Training</strong> (Month 7-8)</td>
+<td>Execute pilot projects, conduct training, gather feedback</td>
+<td>Pilot project execution, training sessions, feedback collection</td>
+</tr>
+<tr>
+<td><strong>Rollout and Documentation</strong> (Month 9-12)</td>
+<td>Gradually roll out GitOps, C4 model, dynamic documentation, create comprehensive documentation, provide support</td>
+<td>GitOps, C4 model, dynamic documentation rollout, comprehensive documentation, ongoing support</td>
+</tr>
+<tr>
+<td><strong>Continuous Improvement and Optimization</strong> (Ongoing)</td>
+<td>Monitor performance, review and refine processes, foster continuous improvement and innovation</td>
+<td>Performance metrics, regular reviews, improvement initiatives</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="resource-allocation-plan">Resource Allocation Plan</h3>
+<p><strong>Objective:</strong></p>
+<p>To ensure the successful implementation of the roadmap by effectively allocating resources, including personnel, budget, and tools, across different phases of the project.</p>
+<h4 id="phase-1-preparation-and-assessment-month-1-2-1">Phase 1: Preparation and Assessment (Month 1-2)</h4>
+<p><strong>Key Activities:</strong></p>
+<ul>
+<li>Stakeholder alignment and buy-in.</li>
+<li>Conduct comprehensive assessments of current deployment processes, architecture documentation, and tech landscape.</li>
+<li>Identify key gaps and areas for improvement.</li>
+</ul>
+<p><strong>Resource Allocation:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Resource Type</th>
+<th>Quantity/Details</th>
+<th>Allocation Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Project Manager</strong></td>
+<td>1 FTE</td>
+<td>To coordinate stakeholder meetings and manage assessment activities.</td>
+</tr>
+<tr>
+<td><strong>Architects</strong></td>
+<td>2 FTE</td>
+<td>To conduct assessments of current architecture documentation and processes.</td>
+</tr>
+<tr>
+<td><strong>Business Analysts</strong></td>
+<td>1 FTE</td>
+<td>To perform gap analysis and compile assessment reports.</td>
+</tr>
+<tr>
+<td><strong>Budget</strong></td>
+<td>$20,000</td>
+<td>For initial assessments, tools for documentation, and meeting expenses.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="phase-2-strategy-development-month-3-4-1">Phase 2: Strategy Development (Month 3-4)</h4>
+<p><strong>Key Activities:</strong></p>
+<ul>
+<li>Develop a GitOps adoption strategy.</li>
+<li>Define the transition plan for migrating architecture diagrams to the C4 model using Structurizr.</li>
+<li>Outline the approach for converting static documentation to dynamic reference architecture examples.</li>
+<li>Create a tech radar and maturity model.</li>
+</ul>
+<p><strong>Resource Allocation:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Resource Type</th>
+<th>Quantity/Details</th>
+<th>Allocation Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Project Manager</strong></td>
+<td>1 FTE</td>
+<td>To oversee the development of strategies and plans.</td>
+</tr>
+<tr>
+<td><strong>Architects</strong></td>
+<td>3 FTE</td>
+<td>To develop GitOps strategy, C4 model transition plan, and documentation strategy.</td>
+</tr>
+<tr>
+<td><strong>Business Analysts</strong></td>
+<td>2 FTE</td>
+<td>To assist in creating the tech radar and maturity model.</td>
+</tr>
+<tr>
+<td><strong>Budget</strong></td>
+<td>$30,000</td>
+<td>For workshops, strategy sessions, and tools for planning and documentation.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="phase-3-tool-and-process-standardization-month-5-6-1">Phase 3: Tool and Process Standardization (Month 5-6)</h4>
+<p><strong>Key Activities:</strong></p>
+<ul>
+<li>Standardize GitOps tools and practices.</li>
+<li>Begin migration of architecture diagrams to the C4 model using Structurizr.</li>
+<li>Implement initial dynamic reference architecture examples.</li>
+<li>Establish unified CI/CD pipelines.</li>
+</ul>
+<p><strong>Resource Allocation:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Resource Type</th>
+<th>Quantity/Details</th>
+<th>Allocation Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Project Manager</strong></td>
+<td>1 FTE</td>
+<td>To manage the standardization process and track progress.</td>
+</tr>
+<tr>
+<td><strong>DevOps Engineers</strong></td>
+<td>3 FTE</td>
+<td>To implement and standardize GitOps tools and CI/CD pipelines.</td>
+</tr>
+<tr>
+<td><strong>Architects</strong></td>
+<td>3 FTE</td>
+<td>To lead the migration to the C4 model and dynamic documentation.</td>
+</tr>
+<tr>
+<td><strong>Budget</strong></td>
+<td>$50,000</td>
+<td>For purchasing tools, training sessions, and initial implementations.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="phase-4-pilot-projects-and-training-month-7-8-1">Phase 4: Pilot Projects and Training (Month 7-8)</h4>
+<p><strong>Key Activities:</strong></p>
+<ul>
+<li>Execute pilot projects to test GitOps, C4 model, and dynamic documentation.</li>
+<li>Conduct training sessions for teams on new tools and practices.</li>
+<li>Gather feedback and refine processes.</li>
+</ul>
+<p><strong>Resource Allocation:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Resource Type</th>
+<th>Quantity/Details</th>
+<th>Allocation Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Project Manager</strong></td>
+<td>1 FTE</td>
+<td>To coordinate pilot projects and training sessions.</td>
+</tr>
+<tr>
+<td><strong>DevOps Engineers</strong></td>
+<td>3 FTE</td>
+<td>To support pilot projects and provide hands-on training.</td>
+</tr>
+<tr>
+<td><strong>Architects</strong></td>
+<td>2 FTE</td>
+<td>To assist with pilot projects and training on the C4 model.</td>
+</tr>
+<tr>
+<td><strong>Training Specialist</strong></td>
+<td>1 FTE</td>
+<td>To develop and conduct training sessions.</td>
+</tr>
+<tr>
+<td><strong>Budget</strong></td>
+<td>$40,000</td>
+<td>For training materials, pilot project resources, and feedback sessions.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="phase-5-rollout-and-documentation-month-9-12-1">Phase 5: Rollout and Documentation (Month 9-12)</h4>
+<p><strong>Key Activities:</strong></p>
+<ul>
+<li>Gradually roll out GitOps, C4 model, and dynamic documentation across all projects.</li>
+<li>Create and maintain comprehensive documentation for new processes and tools.</li>
+<li>Provide ongoing support and troubleshooting.</li>
+</ul>
+<p><strong>Resource Allocation:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Resource Type</th>
+<th>Quantity/Details</th>
+<th>Allocation Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Project Manager</strong></td>
+<td>1 FTE</td>
+<td>To oversee the rollout process and ensure milestones are met.</td>
+</tr>
+<tr>
+<td><strong>DevOps Engineers</strong></td>
+<td>4 FTE</td>
+<td>To implement GitOps and CI/CD pipelines across projects.</td>
+</tr>
+<tr>
+<td><strong>Architects</strong></td>
+<td>3 FTE</td>
+<td>To ensure consistency in C4 model usage and dynamic documentation.</td>
+</tr>
+<tr>
+<td><strong>Technical Writers</strong></td>
+<td>2 FTE</td>
+<td>To develop and maintain comprehensive documentation.</td>
+</tr>
+<tr>
+<td><strong>Budget</strong></td>
+<td>$60,000</td>
+<td>For additional tools, documentation resources, and support infrastructure.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="phase-6-continuous-improvement-and-optimization-ongoing-1">Phase 6: Continuous Improvement and Optimization (Ongoing)</h4>
+<p><strong>Key Activities:</strong></p>
+<ul>
+<li>Monitor and track performance metrics.</li>
+<li>Regularly review and refine processes.</li>
+<li>Foster a culture of continuous improvement and innovation.</li>
+</ul>
+<p><strong>Resource Allocation:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Resource Type</th>
+<th>Quantity/Details</th>
+<th>Allocation Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Project Manager</strong></td>
+<td>1 FTE</td>
+<td>To manage continuous improvement initiatives and reviews.</td>
+</tr>
+<tr>
+<td><strong>DevOps Engineers</strong></td>
+<td>2 FTE</td>
+<td>To monitor and optimize GitOps and CI/CD processes.</td>
+</tr>
+<tr>
+<td><strong>Architects</strong></td>
+<td>2 FTE</td>
+<td>To review and refine architecture practices.</td>
+</tr>
+<tr>
+<td><strong>Business Analysts</strong></td>
+<td>1 FTE</td>
+<td>To analyze performance metrics and suggest improvements.</td>
+</tr>
+<tr>
+<td><strong>Budget</strong></td>
+<td>$30,000 per quarter</td>
+<td>For ongoing training, process refinement tools, and continuous improvement initiatives.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="summary-of-resource-allocation">Summary of Resource Allocation</h4>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Project Manager</th>
+<th>DevOps Engineers</th>
+<th>Architects</th>
+<th>Business Analysts</th>
+<th>Training Specialist</th>
+<th>Technical Writers</th>
+<th>Budget</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Preparation and Assessment</strong> (Month 1-2)</td>
+<td>1 FTE</td>
+<td>0</td>
+<td>2 FTE</td>
+<td>1 FTE</td>
+<td>0</td>
+<td>0</td>
+<td>$20,000</td>
+</tr>
+<tr>
+<td><strong>Strategy Development</strong> (Month 3-4)</td>
+<td>1 FTE</td>
+<td>0</td>
+<td>3 FTE</td>
+<td>2 FTE</td>
+<td>0</td>
+<td>0</td>
+<td>$30,000</td>
+</tr>
+<tr>
+<td><strong>Tool and Process Standardization</strong> (Month 5-6)</td>
+<td>1 FTE</td>
+<td>3 FTE</td>
+<td>3 FTE</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>$50,000</td>
+</tr>
+<tr>
+<td><strong>Pilot Projects and Training</strong> (Month 7-8)</td>
+<td>1 FTE</td>
+<td>3 FTE</td>
+<td>2 FTE</td>
+<td>0</td>
+<td>1 FTE</td>
+<td>0</td>
+<td>$40,000</td>
+</tr>
+<tr>
+<td><strong>Rollout and Documentation</strong> (Month 9-12)</td>
+<td>1 FTE</td>
+<td>4 FTE</td>
+<td>3 FTE</td>
+<td>0</td>
+<td>0</td>
+<td>2 FTE</td>
+<td>$60,000</td>
+</tr>
+<tr>
+<td><strong>Continuous Improvement and Optimization</strong> (Ongoing)</td>
+<td>1 FTE</td>
+<td>2 FTE</td>
+<td>2 FTE</td>
+<td>1 FTE</td>
+<td>0</td>
+<td>0</td>
+<td>$30,000/quarter</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/first-90-days/en/60to90/vision/gremlin-roadmap/phase3/" title="Phase 3"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/first-90-days/en/60to90/vision/gremlin-roadmap/phase5/" title="Phase 5" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/first-90-days/js/clipboard.min.js?1718709981"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.min.js?1718709981"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.jquery.min.js?1718709981"></script>
+    <script src="/first-90-days/js/jquery.sticky.js?1718709981"></script>
+    <script src="/first-90-days/js/featherlight.min.js?1718709981"></script>
+    <script src="/first-90-days/js/highlight.pack.js?1718709981"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/first-90-days/js/modernizr.custom-3.6.0.js?1718709981"></script>
+    <script src="/first-90-days/js/learn.js?1718709981"></script>
+    <script src="/first-90-days/js/hugo-learn.js?1718709981"></script>
+    
+        
+            <script src="/first-90-days/mermaid/mermaid.js?1718709981"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105947713-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
