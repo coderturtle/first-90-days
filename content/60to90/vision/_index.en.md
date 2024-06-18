@@ -1,7 +1,7 @@
 ---
 title: Vision
 weight: 20
-pre: '<b>b. </b>'
+pre: '<b>d. </b>'
 chapter: false
 ---
 

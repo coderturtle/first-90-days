@@ -4,7 +4,7 @@ pre: '<b>4. </b>'
 weight: 20
 ---
 
-![Summary](images/summary.png)
+![Summary](images/summary.jpeg)
 
 A short summary of what has been discussed in detail in the earlier sections around how a new Head of Architecture would approach their first 30, 60 and 90 days in the role
 

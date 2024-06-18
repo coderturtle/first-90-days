@@ -24,6 +24,8 @@
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/vision/gremlin-roadmap/</loc>
   </url><url>
+    <loc>http://localhost:1313/first-90-days/en/60to90/vision/gremlin-roadmap/phase1/</loc>
+  </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/processes/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/conclusion/architect/</loc>
@@ -36,6 +38,8 @@
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/team-integration/framework/</loc>
   </url><url>
+    <loc>http://localhost:1313/first-90-days/en/60to90/vision/gremlin-roadmap/phase2/</loc>
+  </url><url>
     <loc>http://localhost:1313/first-90-days/en/30to60/team-integration/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/team-integration/</loc>
@@ -47,13 +51,21 @@
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/collaboration/</loc>
   </url><url>
+    <loc>http://localhost:1313/first-90-days/en/60to90/vision/gremlin-roadmap/phase3/</loc>
+  </url><url>
+    <loc>http://localhost:1313/first-90-days/en/conclusion/progress-report/</loc>
+  </url><url>
     <loc>http://localhost:1313/first-90-days/en/30to60/quick-wins/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/quick-wins/</loc>
   </url><url>
+    <loc>http://localhost:1313/first-90-days/en/60to90/vision/gremlin-roadmap/phase4/</loc>
+  </url><url>
     <loc>http://localhost:1313/first-90-days/en/conclusion/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/vision/</loc>
+  </url><url>
+    <loc>http://localhost:1313/first-90-days/en/60to90/vision/gremlin-roadmap/phase5/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
