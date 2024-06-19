@@ -1,7 +1,7 @@
 ---
 title: Days 30 - 60
-weight: 15
-pre: '<b>3. </b>'
+weight: 10
+pre: '<b>2. </b>'
 chapter: true
 ---
 

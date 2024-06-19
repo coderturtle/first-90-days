@@ -1,7 +1,7 @@
 ---
 title: Summary & Appendix
-pre: '<b>5. </b>'
-weight: 25
+pre: '<b>4. </b>'
+weight: 20
 ---
 
 ![Summary](images/summary.jpeg)

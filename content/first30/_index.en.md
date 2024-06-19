@@ -1,7 +1,7 @@
 ---
 title: First 30 Days
-weight: 10
-pre: '<b>2. </b>'
+weight: 5
+pre: '<b>1. </b>'
 chapter: true
 ---
 
