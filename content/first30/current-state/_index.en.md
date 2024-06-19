@@ -93,7 +93,7 @@ Understand how data flows through the system and how components integrate.
   - Evaluate data consistency and quality issues.
 
 **Tools:**
-- **Diagram Tools:** Draw.io or [mermaid](https://mermaid.js.org/) for creating data flow diagrams. Special mention to emerging tools such as [codetoflow](https://codetoflow.com/) which uses AI techniques to generate flow diagrams from code.
+- **Diagram Tools:** Draw.io or [mermaid](https://mermaid.js.org/) for creating data flow diagrams. Special mention to emerging tools such as [codetoflow](https://codetoflow.com/) and [diagramgpt](https://www.eraser.io/diagramgpt) which uses AI techniques to generate flow diagrams from code and natural language.
 - **Data Quality Tools:** Talend Open Studio for data integration and quality assessment.
 
 **Documentation:**
