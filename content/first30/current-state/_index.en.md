@@ -23,7 +23,7 @@ Gather high-level information about the current system, pain points, and busines
   - Develop a comprehensive set of questions focusing on system functionality, pain points, and expectations.
 
 **Tools:**
-- **Documentation Tools:** Google Docs or Microsoft Word for note-taking.
+- **Documentation Tools:** Confluence or [Obsidian](https://obsidian.md/) to organize and review documents and notes.
 - **Communication Tools:** Zoom or Microsoft Teams for virtual meetings.
 
 **Example Questions:**
@@ -48,7 +48,7 @@ Understand the current architecture, data flows, and integration points.
   - Analyze the collected documentation to understand the system’s structure and identify any gaps.
 
 **Tools:**
-- **Document Management:** Confluence or Obsidian to organize and review documents and notes.
+- **Document Management:** Confluence or [Obsidian](https://obsidian.md/) to organize and review documents and notes.
 - **Diagram Tools:** [drawio](https://draw.io) or [structurizr](https://docs.structurizr.com/)
 
 **Documentation:**
@@ -93,7 +93,7 @@ Understand how data flows through the system and how components integrate.
   - Evaluate data consistency and quality issues.
 
 **Tools:**
-- **Diagram Tools:** Draw.io or Microsoft Visio for creating data flow diagrams.
+- **Diagram Tools:** Draw.io or [mermaid](https://mermaid.js.org/) for creating data flow diagrams. Special mention to emerging tools such as [codetoflow](https://codetoflow.com/) which uses AI techniques to generate flow diagrams from code.
 - **Data Quality Tools:** Talend Open Studio for data integration and quality assessment.
 
 **Documentation:**
