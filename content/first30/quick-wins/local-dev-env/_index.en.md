@@ -1,19 +1,19 @@
 ---
-title: Example Local Dev Setup
+title: Local Dev Env Setup
 weight: 5
 pre: '<b>i. </b>'
 chapter: false
 ---
 
-![One Click Dev Env](images/one-click.png)
-
-### Improving Local Development Environment Setup: Leveraging Automation and Containers
+![Local Dev Setup](images/gremlin-local-dev.png)
 
 **Objective:**
 
-To streamline the process of setting up a local development environment, making it quick, consistent, and easy for new developers to get started at Gremlins Inc.
+Leveraging automation and containers to streamline the process of setting up a local development environment, making it quick, consistent, and easy for new developers to get started at Gremlins Inc.
 
 ### Steps to Implement One-Click Local Development Environment Setup
+
+![One Click Dev Env](images/one-click.png)
 
 #### 1. Containerization with Docker
 

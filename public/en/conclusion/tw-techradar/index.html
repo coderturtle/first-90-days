@@ -1,0 +1,2193 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/first-90-days/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=first-90-days/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="description" content="Example of first 90 days reviewing an architecture thene">
+<meta name="author" content="Derm Duncan">
+
+    <link rel="icon" href="/first-90-days/images/favicon.png" type="image/png">
+
+    <title>Thoughtworks BYOR :: Head of Architecture First 90 Days</title>
+
+    
+    <link href="/first-90-days/css/nucleus.css?1719573334" rel="stylesheet">
+    <link href="/first-90-days/css/fontawesome-all.min.css?1719573334" rel="stylesheet">
+    <link href="/first-90-days/css/hybrid.css?1719573334" rel="stylesheet">
+    <link href="/first-90-days/css/featherlight.min.css?1719573334" rel="stylesheet">
+    <link href="/first-90-days/css/perfect-scrollbar.min.css?1719573334" rel="stylesheet">
+    <link href="/first-90-days/css/auto-complete.css?1719573334" rel="stylesheet">
+    <link href="/first-90-days/css/atom-one-dark-reasonable.css?1719573334" rel="stylesheet">
+    <link href="/first-90-days/css/theme.css?1719573334" rel="stylesheet">
+    <link href="/first-90-days/css/hugo-theme.css?1719573334" rel="stylesheet">
+    
+    <link href="/first-90-days/css/theme-blue.css?1719573334" rel="stylesheet">
+    
+    
+
+    <script src="/first-90-days/js/jquery-3.3.1.min.js?1719573334"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/first-90-days/en/conclusion/tw-techradar/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+  <img src="images/cloud-gremlin-blue.png" />
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/first-90-days/js/lunr.min.js?1719573334"></script>
+<script type="text/javascript" src="/first-90-days/js/auto-complete.js?1719573334"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/first-90-days\/";
+    
+</script>
+<script type="text/javascript" src="/first-90-days/js/search.js?1719573334"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/" title="First 30 Days" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/">
+          <b>1. </b>First 30 Days
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/current-state/" title="Current State" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/current-state/">
+          <b>a. </b>Current State
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/current-state/sample-report/" title="Gremlins Current State &amp; Recommendations" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/current-state/sample-report/">
+          <b>i. </b>Gremlins Current State &amp; Recommendations
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/team-integration/" title="Team Integration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/team-integration/">
+          <b>b. </b>Team Integration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/team-integration/framework/" title="Measure Architect Effectiveness" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/team-integration/framework/">
+          <b>i. </b>Measure Architect Effectiveness
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/quick-wins/" title="Quick Wins" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/quick-wins/">
+          <b>c. </b>Quick Wins
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/first30/quick-wins/local-dev-env/" title="Local Dev Env Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/first30/quick-wins/local-dev-env/">
+          <b>i. </b>Local Dev Env Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/" title="Days 30 - 60" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/">
+          <b>2. </b>Days 30 - 60
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/strategic-plan/" title="Strategic Plan" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/strategic-plan/">
+          <b>a. </b>Strategic Plan
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/strategic-plan/example-plan/" title="Strategic Plan for Gremlins Inc" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/strategic-plan/example-plan/">
+          <b>i. </b>Strategic Plan for Gremlins Inc
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/team-integration/" title="Team Integration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/team-integration/">
+          <b>b. </b>Team Integration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/team-integration/coe/" title="Gremlins Architect CoE Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/team-integration/coe/">
+          <b>i. </b>Gremlins Architect CoE Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/quick-wins/" title="Quick Wins" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/quick-wins/">
+          <b>c. </b>Quick Wins
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/30to60/quick-wins/swe-agent/" title="Innovating with Rapid Prototyping" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/30to60/quick-wins/swe-agent/">
+          <b>i. </b>Innovating with Rapid Prototyping
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/" title="Days 60 - 90" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/">
+          <b>3. </b>Days 60 - 90
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/processes/" title="Review Processes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/processes/">
+          <b>a. </b>Review Processes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/processes/gremlins/" title="Example - Consistency &amp; Efficiency" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/processes/gremlins/">
+          <b>i. </b>Example - Consistency &amp; Efficiency
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/innovation/" title="Drive Innovation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/innovation/">
+          <b>b. </b>Drive Innovation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/innovation/techradar/" title="Tech Radar" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/innovation/techradar/">
+          <b>i. </b>Tech Radar
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/innovation/maturity-matrix/" title="Maturity Matrix" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/innovation/maturity-matrix/">
+          <b>ii. </b>Maturity Matrix
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/collaboration/" title="Foster Collaboration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/collaboration/">
+          <b>c. </b>Foster Collaboration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/collaboration/example-collab-model/" title="Collaboration at Gremlins" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/collaboration/example-collab-model/">
+          <b>i. </b>Collaboration at Gremlins
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/" title="Vision" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/">
+          <b>d. </b>Vision
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/gremlin-roadmap/" title="Gremlins Inc Roadmap" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/gremlin-roadmap/">
+          <b>i. </b>Gremlins Inc Roadmap
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/gremlin-roadmap/phase1/" title="Phase 1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/gremlin-roadmap/phase1/">
+          <b>1. </b>Phase 1
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/gremlin-roadmap/phase2/" title="Phase 2" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/gremlin-roadmap/phase2/">
+          <b>2. </b>Phase 2
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/gremlin-roadmap/phase3/" title="Phase 3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/gremlin-roadmap/phase3/">
+          <b>3. </b>Phase 3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/gremlin-roadmap/phase4/" title="Phase 4" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/gremlin-roadmap/phase4/">
+          <b>4. </b>Phase 4
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/60to90/vision/gremlin-roadmap/phase5/" title="Phase 5" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/60to90/vision/gremlin-roadmap/phase5/">
+          <b>5. </b>Phase 5
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/" title="Summary &amp; Appendix" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/">
+          <b>4. </b>Summary &amp; Appendix
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/architect/" title="Architect Impact" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/architect/">
+          <b>Appendix I. </b>Architect Impact
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/architecture/" title="Software Architecture" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/architecture/">
+          <b>Appendix II. </b>Software Architecture
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/progress-report/" title="Progress Reports" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/progress-report/">
+          <b>Appendix III. </b>Progress Reports
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/diagrams-as-code/" title="Diagrams as Code" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/first-90-days/en/conclusion/diagrams-as-code/">
+          <b>Appendix IV. </b>Diagrams as Code
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/first-90-days/en/conclusion/tw-techradar/" title="Thoughtworks BYOR" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="/first-90-days/en/conclusion/tw-techradar/">
+          <b>Appendix V. </b>Thoughtworks BYOR
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/coderturtle/first-90-days"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://coderturtle.githubpages.io/first-90-days"><i class='fas fa-fw fa-camera'></i> Showcases</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://gohugo.io/"><i class='fas fa-fw fa-bookmark'></i> Hugo Documentation</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download matcornic/hugo-theme-learn on GitHub">Download</a>
+
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn" data-icon="octicon-star" data-show-count="true" aria-label="Star matcornic/hugo-theme-learn on GitHub">Star</a>
+
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork matcornic/hugo-theme-learn on GitHub">Fork</a>
+
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/coderturtle/first-90-daysconclusion/tw-techradar/_index.en.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/first-90-days/en/'>Head of Architecture - First 90 Days</a> > <a href='/first-90-days/en/conclusion/'>Summary & Appendix</a> > Thoughtworks BYOR
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#tech-radar">Tech Radar</a>
+      <ul>
+        <li><a href="#thoughtworks-byor-build-your-own-radar">ThoughtWorks BYOR (Build your own radar)</a></li>
+      </ul>
+    </li>
+    <li><a href="#issues-with-the-original-radar">Issues with the original radar</a></li>
+    <li><a href="#what-we-want-from-the-radar">What we want from the radar</a></li>
+    <li><a href="#what-we-have-done-so-far">What we have done so far</a></li>
+    <li><a href="#alternatives">Alternatives</a>
+      <ul>
+        <li><a href="#using-a-private-google-sheet">Using a private Google Sheet</a></li>
+        <li><a href="#hosting-the-csv-file-via-httpd">Hosting the CSV file via httpd</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Thoughtworks BYOR
+            </h1>
+          
+
+        
+
+
+
+	<h2 id="tech-radar">Tech Radar</h2>
+<p>Gremlins interactive radar, inspired by <a href="http://thoughtworks.com/radar">thoughtworks.com/radar</a></p>
+<p><img alt="Gremlins Tech Radar" src="/first-90-days/en/conclusion/tw-techradar/images/gremlins-tr.png"></p>
+<h3 id="thoughtworks-byor-build-your-own-radar">ThoughtWorks BYOR (Build your own radar)</h3>
+<p>Neal Ford created a great <a href="https://www.thoughtworks.com/insights/blog/build-your-own-technology-radar">walkthrough</a> of the concept of what a tech radar is and how it&rsquo;s created. Thoughtworks also provide a great <a href="https://www.thoughtworks.com/radar/byor">video</a> stepping through the process as well.</p>
+<h4 id="run-locally">Run Locally</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker pull wwwthoughtworks/build-your-own-radar
+</span></span><span style="display:flex;"><span>$ docker run --rm -p 8080:80 -e SERVER_NAMES<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;localhost 127.0.0.1&#34;</span> wwwthoughtworks/build-your-own-radar
+</span></span><span style="display:flex;"><span>$ open http://localhost:8080
+</span></span></code></pre></div><h4 id="setting-up-your-data">Setting up your data</h4>
+<p>You need to make your data public in a form the app can digest.</p>
+<p>Create a Google Sheet or Excel doc. Give it at least the below column headers, and put in the content that you want:</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>ring</th>
+<th>quadrant</th>
+<th>isNew</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Composer</td>
+<td>adopt</td>
+<td>tools</td>
+<td>TRUE</td>
+<td>Although the idea of dependency management &hellip;</td>
+</tr>
+<tr>
+<td>Canary builds</td>
+<td>trial</td>
+<td>techniques</td>
+<td>FALSE</td>
+<td>Many projects have external code dependencies &hellip;</td>
+</tr>
+<tr>
+<td>Apache Kylin</td>
+<td>assess</td>
+<td>platforms</td>
+<td>TRUE</td>
+<td>Apache Kylin is an open source analytics solution &hellip;</td>
+</tr>
+<tr>
+<td>JSF</td>
+<td>hold</td>
+<td>languages &amp; frameworks</td>
+<td>FALSE</td>
+<td>We continue to see teams run into trouble using JSF &hellip;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="using-csv-data">Using CSV data</h4>
+<p>The other way to provide your data is using CSV document format.
+You can enter any URL that responds CSV data into the input field on the first page.
+The format is just the same as that of the Google or Excel Sheet, the example is as follows:</p>
+<pre tabindex="0"><code>name,ring,quadrant,isNew,description  
+Composer,adopt,tools,TRUE,&#34;Although the idea of dependency management ...&#34;  
+Canary builds,trial,techniques,FALSE,&#34;Many projects have external code dependencies ...&#34;  
+Apache Kylin,assess,platforms,TRUE,&#34;Apache Kylin is an open source analytics solution ...&#34;  
+JSF,hold,languages &amp; frameworks,FALSE,&#34;We continue to see teams run into trouble using JSF ...&#34;  
+</code></pre><p>Or simply export your Excel doc to csv.
+<em><strong>Note:</strong></em> The CSV file parsing is using D3 library, so consult the D3 documentation for the data format details.</p>
+<h4 id="sharing-the-sheet">Sharing the sheet</h4>
+<ul>
+<li>In Google sheets, go to &lsquo;File&rsquo;, choose &lsquo;Publish to the web&hellip;&rsquo; and then click &lsquo;Publish&rsquo;.</li>
+<li>Close the &lsquo;Publish to the web&rsquo; dialog.</li>
+<li>Copy the URL of your editable sheet from the browser (Don&rsquo;t worry, this does not share the editable version).</li>
+</ul>
+<p>The URL will be similar to <a href="https://docs.google.com/spreadsheets/d/1waDG0_W3-yNiAaUfxcZhTKvl7AUCgXwQw8mdPjCz86U/edit">https://docs.google.com/spreadsheets/d/1waDG0_W3-yNiAaUfxcZhTKvl7AUCgXwQw8mdPjCz86U/edit</a>. In theory we are only interested in the part between &lsquo;/d/&rsquo; and &lsquo;/edit&rsquo; but you can use the whole URL if you want.</p>
+<h4 id="building-the-radar">Building the radar</h4>
+<p>Paste the URL in the input field on the home page at <a href="http://localhost:8080">http://localhost:8080</a>.</p>
+<p>However, it is not perfect and has some issues and limitations. In this document, we enumerate them and describe what temporary measures we have put in place and the next steps for a long-lasting, maintainable solution. We also examine what could be alternative solutions to some of these issues.</p>
+<h2 id="issues-with-the-original-radar">Issues with the original radar</h2>
+<p>ThoughtWorks Radar is more of a tool to build radars than a radar in itself. You can feed the tool with your radar data in two ways:</p>
+<ul>
+<li>A Google Sheet (public or private providing credentials)</li>
+<li>A CSV file accessed over HTTP</li>
+</ul>
+<p>There is a fixed format (e.g., name, ring, quadrant, isNew, description) and a specific order for the data source entries. Furthermore, <strong>whatever is hosting the radar needs access to the data source</strong>. For example, if we were to host the CSV file in GitHub, we would have to use a public repository.</p>
+<p>The other issue is with regards to user experience. When landing on the original radar&rsquo;s root page, you get presented with a simple textbox to input the URL where the data source lives.</p>
+<p><img alt="ThoughtWorks BYOR" src="/first-90-days/en/conclusion/tw-techradar/images/thoughtworks-byor.jpg"></p>
+<p>Only when navigating to an URL like <a href="https://radar.my">https://radar.my</a>-domain./com?<strong>sheetId=[URL to your data source]</strong> does the actual radar appear, with blips distributed across quadrants and rings).</p>
+<h2 id="what-we-want-from-the-radar">What we want from the radar</h2>
+<p>If we were to put on our Product Owner hat and list what requirements we have for the radar, those would be:</p>
+<ul>
+<li>Treat the data source for the radar as code (i.e., store it in Git)</li>
+<li>Keep the data source and the actual radar code as close as possible</li>
+<li>When navigating to <a href="http://radar.gremlins.io">http://radar.gremlins.io</a> s(or similar), load the data directly (instead of displaying the image above)</li>
+<li>Reduce maintainability effort as much as possible (e.g., avoid forking if possible)</li>
+<li>Reduce deployment complexity and resource utilisation</li>
+</ul>
+<h2 id="what-we-have-done-so-far">What we have done so far</h2>
+<p>To achieve the list of features above (assuming you can&rsquo;t have your cake and eat it), we have decided to compromise on maintainability efforts and fork the radar to add a few small modifications.</p>
+<p>With these modifications, we are capable of:</p>
+<ul>
+<li>Loading the blips from a local CSV file that is part of the container that runs the radar</li>
+<li>Load the radar page (instead of the image above) directly</li>
+</ul>
+<p>While forking the radar is not desirable, it is likely to happen if we were to expose the radar externally. In that scenario, we would want to customise the radar beyond what ThoughtWorks provides out of the box. Some of the specific customisations would include:</p>
+<ul>
+<li>Gremlins own logo</li>
+<li>Specific text in the radar title</li>
+<li>Some modifications to the legal text in the footer section</li>
+<li>Touching on the colour palette to fit Gremlins design guidelines</li>
+</ul>
+<h2 id="alternatives">Alternatives</h2>
+<p>Instead of forking and modifying the radar, we could have opted for other solutions. For completeness, they are listed here (and can be re-evaluated) in the future.</p>
+<h3 id="using-a-private-google-sheet">Using a private Google Sheet</h3>
+<p>Since ThoughtWorks radar supports Google Sheets behind authentication credentials, we could have opted for this option and feed the radar with one of them without being forced to make it public.</p>
+<p>This option has two problems:</p>
+<ul>
+<li>Gremlins is not using (and doesn&rsquo;t have any plans) to use Google Suite, including Google Sheets. Instead, we are firmly set with Microsoft Office. Operationally, it might bring some challenges to add another product into our stack</li>
+<li>Whatever Google account hosted this sheet, we would either risk losing access if the person owning left Gremlins or having to manage a shared account (and its credentials), which would increase the operational burden</li>
+</ul>
+<h3 id="hosting-the-csv-file-via-httpd">Hosting the CSV file via httpd</h3>
+<p>It should be possible to craft a CSV file and serve it via httpd as described in <a href="https://github.com/thoughtworks/build-your-own-radar/issues/51">this issue</a>. That way, we would not need to change the ThoughtWorks radar code; also, Google Sheet would not be required.</p>
+<p>In this case, we would create a separate application responsible for:</p>
+<ul>
+<li>Run the ThoughtWorks radar process</li>
+<li>Run the httpd process</li>
+<li>Somewhat intercept any request coming to the root page and, instead, redirect it to the appropriate address to make sure the radar would load by default</li>
+</ul>
+<p>With this approach, we would use ThoughtWorks radar as originally intended: a tool to build radars instead of a radar itself.</p>
+<p>We should re-evaluate this approach once we have a platform to run applications (and containers). We should also balance it against the (potential) need to customise the radar to make it public.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/first-90-days/en/conclusion/diagrams-as-code/" title="Diagrams as Code"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/first-90-days/en/conclusion/architect/" title="Architect Impact" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/first-90-days/js/clipboard.min.js?1719573334"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.min.js?1719573334"></script>
+    <script src="/first-90-days/js/perfect-scrollbar.jquery.min.js?1719573334"></script>
+    <script src="/first-90-days/js/jquery.sticky.js?1719573334"></script>
+    <script src="/first-90-days/js/featherlight.min.js?1719573334"></script>
+    <script src="/first-90-days/js/highlight.pack.js?1719573334"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/first-90-days/js/modernizr.custom-3.6.0.js?1719573334"></script>
+    <script src="/first-90-days/js/learn.js?1719573334"></script>
+    <script src="/first-90-days/js/hugo-learn.js?1719573334"></script>
+    
+        
+            <script src="/first-90-days/mermaid/mermaid.js?1719573334"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105947713-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

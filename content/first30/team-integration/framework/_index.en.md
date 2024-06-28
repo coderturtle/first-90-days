@@ -1,13 +1,11 @@
 ---
-title: Example Framework
+title: Measure Architect Effectiveness
 weight: 10
 pre: '<b>i. </b>'
 chapter: false
 ---
 
-![Framework](images/framework.png)
-
-#### Framework to Measure the Effectiveness of the Architect Role
+![Framework](images/gremlin-effectiveness.png)
 
 **Objective:**
 

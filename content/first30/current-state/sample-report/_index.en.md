@@ -1,9 +1,11 @@
 ---
-title: Example Report
+title: Gremlins Current State & Recommendations
 weight: 5
 chapter: false
 pre: '<b>i. </b>'
 ---
+
+![Current State Report](images/gremlin-proposal.png)
 
 ## Executive Summary
 

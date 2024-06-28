@@ -7,6 +7,9 @@ chapter: false
 
 ### Collaboration Approach for the Architect Team at Gremlins Inc.
 
+
+![Collaboration](images/gremlins-collab.png)
+
 **Objective:**
 
 To establish a collaboration approach for the architect team at Gremlins Inc. that minimizes meetings, maximizes asynchronous communication, and ensures continuous improvement.

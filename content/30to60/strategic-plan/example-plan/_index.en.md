@@ -1,11 +1,11 @@
 ---
-title: Example - Gremlins Inc
+title: Strategic Plan for Gremlins Inc
 weight: 5
 pre: '<b>i. </b>'
 chapter: false
 ---
 
-### Example Light Weight Strategic Plan for a Fictional Company: Gremlins Inc.
+![Strategic Plan](images/gremlin-plan.png)
 
 #### Executive Summary
 Gremlins Inc. aims to become a leader in cloud-based solutions over the next three years. This strategic plan outlines key initiatives and milestones to enhance our architecture, streamline processes, and drive innovation. Our focus areas include improving system performance, enhancing security, adopting agile methodologies, and fostering a culture of continuous improvement.

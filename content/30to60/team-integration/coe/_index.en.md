@@ -1,13 +1,11 @@
 ---
-title: Example - CoE Setup
+title: Gremlins Architect CoE Setup
 weight: 5
 pre: '<b>i. </b>'
 chapter: false
 ---
 
-### Setting Up an Architecture Center of Excellence (CoE) Operating Model in Gremlins Inc.: Centralized Control with Decentralized Execution
-
-![CoE](images/coe.png)
+![CoE](images/gremlins-coe.png)
 
 **Objective:**
 

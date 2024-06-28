@@ -1,13 +1,11 @@
 ---
-title: Example - Rapid Prototyping
+title: Innovating with Rapid Prototyping
 weight: 5
 pre: '<b>i. </b>'
 chapter: false
 ---
 
-### Speed Up Concept Development & Prototyping with SWE-Agent
-
-![Matrix](images/matrix.jpeg)
+![Rapid Prototyping](images/gremlin-prototyping.png)
 
 **Objective:**
 

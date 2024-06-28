@@ -5,6 +5,8 @@ pre: '<b>i. </b>'
 chapter: false
 ---
 
+![Roadmap & Vision](images/gremlin-roadmap.png)
+
 **Objective:**
 
 Address challenges of stale documentation, inconsistencies in tooling and architectures, and adopt a tech radar, maturity model, and GitOps for improved efficiency and consistency.

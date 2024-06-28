@@ -22,6 +22,8 @@
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/current-state/sample-report/</loc>
   </url><url>
+    <loc>http://localhost:1313/first-90-days/en/first30/</loc>
+  </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/vision/gremlin-roadmap/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/vision/gremlin-roadmap/phase1/</loc>
@@ -30,11 +32,11 @@
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/30to60/strategic-plan/</loc>
   </url><url>
+    <loc>http://localhost:1313/first-90-days/en/30to60/</loc>
+  </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/innovation/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/team-integration/framework/</loc>
-  </url><url>
-    <loc>http://localhost:1313/first-90-days/en/first30/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/vision/gremlin-roadmap/phase2/</loc>
   </url><url>
@@ -44,7 +46,8 @@
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/team-integration/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/30to60/</loc>
+    <loc>http://localhost:1313/first-90-days/en/60to90/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/collaboration/</loc>
   </url><url>
@@ -56,16 +59,15 @@
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/first30/quick-wins/</loc>
   </url><url>
-    <loc>http://localhost:1313/first-90-days/en/60to90/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+    <loc>http://localhost:1313/first-90-days/en/conclusion/diagrams-as-code/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/vision/gremlin-roadmap/phase4/</loc>
+  </url><url>
+    <loc>http://localhost:1313/first-90-days/en/conclusion/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/vision/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/60to90/vision/gremlin-roadmap/phase5/</loc>
-  </url><url>
-    <loc>http://localhost:1313/first-90-days/en/conclusion/</loc>
   </url><url>
     <loc>http://localhost:1313/first-90-days/en/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>

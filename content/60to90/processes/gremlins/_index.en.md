@@ -7,6 +7,8 @@ chapter: false
 
 ### Sample Process Review and Refinement for Gremlins Inc.
 
+![Process Review](images/gremlins-process.png)
+
 **Objective:**
 
 To ensure consistency across teams and identify efficiency improvements within the processes at Gremlins Inc.

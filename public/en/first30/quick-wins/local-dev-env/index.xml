@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Example Local Dev Setup on Head of Architecture First 90 Days</title>
+    <title>Local Dev Env Setup on Head of Architecture First 90 Days</title>
     <link>http://localhost:1313/first-90-days/en/first30/quick-wins/local-dev-env/</link>
-    <description>Recent content in Example Local Dev Setup on Head of Architecture First 90 Days</description>
+    <description>Recent content in Local Dev Env Setup on Head of Architecture First 90 Days</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="http://localhost:1313/first-90-days/en/first30/quick-wins/local-dev-env/index.xml" rel="self" type="application/rss+xml" />
