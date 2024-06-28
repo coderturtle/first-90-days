@@ -8,7 +8,7 @@ metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = "https://github.com/coderturtle/first-90-days"
+  editURL = "https://github.com/coderturtle/first-90-days/tree/main/content/"
   description = "Example of first 90 days reviewing an architecture thene"
   author = "Derm Duncan"
   themeVariant = "blue"
