@@ -17,7 +17,7 @@ To enhance the technology landscape at Gremlins Inc. by introducing a Tech Radar
 
 One of the Tech Radar's purposes is to find the right balance between fast technology adoption and thorough assessment. There is a cost of opportunity when not adopting new, better ways to build software systems; however, choosing the wrong technology can be costly.
 
-The Tech Radar process defines a shortlist of stages (i.e., rings) that technology has to pass through in its way to be fully onboarded and available to HUB engineers. This document outlines those states and what inputs, outputs, activities, and criteria should be considered to move through the process towards a successful ending.
+The Tech Radar process defines a shortlist of stages (i.e., rings) that technology has to pass through in its way to be fully onboarded and available to Gremlin Incs engineers. This document outlines those states and what inputs, outputs, activities, and criteria should be considered to move through the process towards a successful ending.
 
 For the rest of this document, we will use the term "Blip" to refer to any given technology (e.g., language, framework, tool, platform or technique) that appears on the radar.
 
@@ -26,8 +26,8 @@ For the rest of this document, we will use the term "Blip" to refer to any given
 Stages or Rings codify information about a given blip from multiple perspectives:
 Whether the Architecture team has already spent time assessing it or not
 How mature is the technology behind this blip (e.g., recently launched beta)
-How well understood it is inside HUB (e.g., staff with production experience)
-Is there any HUB system using it in production already?
+How well understood it is inside Gremlins Inc (e.g., staff with production experience)
+Is there any Gremlins Inc system using it in production already?
 What stage or ring a blip falls in has multiple consequences, the most important one being whether engineers across the development teams can freely use it for their production use cases or not.
 
 ![Tech Radar Process](images/tech_radar_process.png)
@@ -35,12 +35,12 @@ What stage or ring a blip falls in has multiple consequences, the most important
 
 #### Ring 1 - Hold
 
-Hold contains blips that HUB is not ready to adopt yet, for various reasons. We can break down these reasons into four categories:
+Hold contains blips that Gremlins Inc is not ready to adopt yet, for various reasons. We can break down these reasons into four categories:
 New (no assessment has been done yet)
 Immature (technology not ready yet for adoption)
 Discarded (assessed and concluded that we will not adopt)
 Deprecated (once adopted technology, replaced by a better alternative)
-New projects cannot use blips in this category either because they are unknown and unproven or trying to eliminate them from HUB technical stack.
+New projects cannot use blips in this category either because they are unknown and unproven or trying to eliminate them from Gremlin Incs technical stack.
 
 
 #### Ring 2 - Assess
@@ -60,8 +60,8 @@ A blip mustn't move to 'Trial' until there is a plan to move it from a conceptua
 
 Not all assessments are successful. A blip moves back to 'Hold' under the following circumstances (previously mentioned in the 'Hold' section):
 Immature: the technology might have shown potential, but it is not ready to meet our production systems' quality standards. Consider reassessing in the future.
-Discarded: something intrinsic to the technology has deemed it not suitable for HUB needs and standards. The decision is permanent.
-When an assessment result is negative, it is crucial to make it very clear why. Otherwise, future HUB generations might waste time reassessing something that is not worth the effort.
+Discarded: something intrinsic to the technology has deemed it not suitable for Gremlins Inc needs and standards. The decision is permanent.
+When an assessment result is negative, it is crucial to make it very clear why. Otherwise, future Gremlin Incs generations might waste time reassessing something that is not worth the effort.
 
 
 #### Ring 3 - Trial
@@ -87,7 +87,7 @@ A blip may move back to 'Hold' if the trial is not successful. Similar to the 'A
 
 #### Ring 4 - Adopt
 
-The final stage contains blips that HUB trust and has enough development and operational experience to run in production.
+The final stage contains blips that Gremlins Inc trust and has enough development and operational experience to run in production.
 
 Teams can choose technologies in this ring without questions being asked, provided they are the right tool for the job.
 
