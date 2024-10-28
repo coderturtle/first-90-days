@@ -7,7 +7,7 @@ chapter: false
 
 # Current State Architecture Review Report
 
-**Prepared by:** Dermot Duncan, Head of Architecture  
+**Prepared by:** [Insert Name], Head of Architecture  
 **Date:** [Insert Date]  
 
 ---
@@ -63,5 +63,5 @@ The current state review highlights several critical areas for improvement in ou
 ---
 
 **Prepared by:**  
-Dermot Duncan  
+[Insert Name]  
 Head of Architecture
