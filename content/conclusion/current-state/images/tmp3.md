@@ -1,0 +1,9 @@
+### Executive Summary
+
+This report provides an update on the recent CrowdStrike outage that impacted a third-party vendor, resulting in a seven-hour unavailability of our systems due to dependencies on their services. The outage stemmed from a technical issue within CrowdStrike’s infrastructure, which delayed the deployment of a fix across affected environments. Given our reliance on CrowdStrike’s services, the incident highlighted potential vulnerabilities and prompted a review of both proactive and reactive measures to enhance our resilience.
+
+The third-party vendor has implemented several proactive measures to mitigate future risks, including adopting a Software Development Lifecycle (SDLC) approach to test updates in lower environments before deploying them to production. This structured approach reduces the likelihood of service disruptions due to unvetted updates.
+
+However, to further improve incident response times and ensure rapid remediation in similar scenarios, we are seeking clarity on enhancements to the vendor’s reactive processes. Specific focus areas include improvements in incident detection, client communication protocols, coordination with CrowdStrike, and adjustments to their post-incident review and testing practices. Understanding these changes will enable us to align our own response protocols, strengthening our collective resilience against future disruptions.
+
+The recommended next steps include exploring additional vendor options to reduce single points of failure, enhancing internal testing and incident response drills, and maintaining collaborative reviews with CrowdStrike to address any remaining vulnerabilities. These efforts will contribute to a more resilient infrastructure capable of maintaining critical functionality under a range of conditions.
